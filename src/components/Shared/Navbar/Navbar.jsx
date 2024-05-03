@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full text-white z-10 transition-transform duration-300 transform ${show ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="container mx-auto py-4 flex justify-between items-center">
 
-        <Link href="/" className="text-2xl font-bold">Barber Shop</Link>
+        <Link href="/" className="text-2xl font-bold text-[#D4A745]">Barber Shop</Link>
 
         <ul className="flex space-x-6">
           <NavItem href="/services">Services</NavItem>

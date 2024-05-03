@@ -17,7 +17,7 @@ const HeroSection = () => {
     })
 
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const x = useTransform(scrollYProgress, [0, 1], [0, -600]);
+    const x = useTransform(scrollYProgress, [0, 1], [0, -700]);
 
 
     const togglePlayPause = () => {
