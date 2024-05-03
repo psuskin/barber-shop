@@ -1,33 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    /* background-color: rgb(255, 255, 255); */
+    overflow-x: hidden;
+    background-color: #292929;
+    font-family: 'Belleza', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+:root {
+    --header-color: #D4A745;
+
+    /* Paragraph color variable */
+    --paragraph-color: #a0a0a0;
+
+    --bg-color: #292929;
 }

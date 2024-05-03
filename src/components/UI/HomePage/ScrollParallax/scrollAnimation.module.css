@@ -1,0 +1,64 @@
+.scrollSectionOuter {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.textContainer {
+    top: 4.5em;
+    left: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: start;
+    z-index: 100;
+}
+
+.description {
+    color: var(--paragraph-color);
+}
+
+.title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 100;
+    color: var(--header-color);
+}
+
+.scrollSectionInner {
+    height: 100vh;
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.scrollSection {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-section h3 {
+    color: white;
+    letter-spacing: 10px;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.cardSection {
+    width: 50%;
+    height: 50%;
+    background-color: cadetblue;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
+}
