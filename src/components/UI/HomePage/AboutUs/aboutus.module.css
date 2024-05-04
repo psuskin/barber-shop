@@ -1,0 +1,12 @@
+.aboutContainer {
+    background-color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.title {
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}

@@ -1,0 +1,46 @@
+.pricingContainer {
+    background-color: rgb(255, 254, 254);
+    height: 100vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.textContainer {
+    width: 40%;
+}
+
+.textContainer h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--header-color)
+}
+
+.textContainer h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.1em
+}
+
+.priceItem {
+    text-wrap: nowrap;
+    width: 40%;
+    margin-top: 2em;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.priceTitle {
+    font-size: 2em;
+}
+
+.price {
+    font-size: 2.5em;
+}

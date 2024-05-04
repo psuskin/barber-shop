@@ -1,0 +1,108 @@
+.container {
+    height:300vh;
+    position: relative;
+    /* padding-top: 200px; */
+    background-color: black;
+}
+
+.sticky {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+}
+
+.sticky .el {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imageContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sticky .el .imageContainer {
+    position: relative;
+    width: 25vw;
+    height: 25vh;
+}
+
+.sticky .el:nth-of-type(2) .imageContainer {
+    top: -30vh;
+    left: 5vw;
+    width: 35vw;
+    height: 30vh;
+}
+
+.sticky .el:nth-of-type(3) .imageContainer {
+    top: -10vh;
+    left: -25vw;
+    width: 20vw;
+    height: 45vh;
+}
+
+.sticky .el:nth-of-type(4) .imageContainer {
+    left: 27.5vw;
+    width: 25vw;
+    height: 25vh;
+}
+
+.sticky .el:nth-of-type(5) .imageContainer {
+    top: 27.5vh;
+    left: 5vw;
+    width: 20vw;
+    height: 25vh;
+}
+
+.sticky .el:nth-of-type(6) .imageContainer {
+    top: 27.5vh;
+    left: -22.5vw;
+    width: 30vw;
+    height: 25vh;
+}
+
+.sticky .el:nth-of-type(7) .imageContainer {
+    top: 22.5vh;
+    left: 25vw;
+    width: 15vw;
+    height: 15vh;
+}
+
+
+/*  */
+
+.textContainer {
+    margin-top: -8em;
+    left: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: start;
+    z-index: 1;
+}
+
+
+.textContainer h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--header-color)
+}
+
+.textContainer h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.1em
+}

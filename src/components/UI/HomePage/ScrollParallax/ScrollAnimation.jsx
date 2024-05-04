@@ -101,7 +101,7 @@ const ScrollAnimation = () => {
                     </div>
                     <div className={styles.scrollSection}>
                         <div className={styles.cardSection}>
-                            <h1 className={styles.imageTitle}>Cuts</h1>
+                            <h1 className={styles.imageTitle}>Hair Cuts</h1>
                             <Image className={styles.image} src="/Images/11.jpg" alt='Images' width={300} height={400} />
                         </div>
                     </div>
