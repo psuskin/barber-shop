@@ -1,21 +1,18 @@
 .pricingContainer {
-    background-color: rgb(255, 254, 254);
-    height: 100vh;
+    height: 130vh;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
     position: relative;
 }
 
-.textContainer {
-    width: 40%;
-}
 
 .textContainer h3 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--header-color)
+    color: var(--header-color);
 }
 
 .textContainer h1 {
@@ -23,24 +20,61 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
-    line-height: 1.1em
+    line-height: 1.1em;
+}
+
+.priceSection {
+    width: 60%;
+    padding-right: 40px;
+}
+
+.priceItemContainer {
+    margin-top: 4em;
+    width: 100%;
 }
 
 .priceItem {
-    text-wrap: nowrap;
-    width: 40%;
-    margin-top: 2em;
+    margin-top: 0.5em;
     display: flex;
-    gap: 10px;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
-
 .priceTitle {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 0.4em;
+}
+
+.priceDescription {
+    font-size: 1em;
+    color: #666;
 }
 
 .price {
     font-size: 2.5em;
+    color: var(--header-color);
 }
+
+.dashedLine {
+    width: 100%;
+    opacity: 20%;
+    border-bottom: 2px solid #333;
+    margin-top: 0.2em;
+}
+
+.bannerSection {
+    width: 40%;
+    position: relative;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+

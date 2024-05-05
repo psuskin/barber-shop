@@ -97,7 +97,7 @@ const Navbar = () => {
           <NavItem href="/about">About</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </ul>
-        <Link href="/" className="text-2xl font-bold text-[#D4A745]">Barber Shop</Link>
+        <Link href="/" className="text-2xl font-bold text-[#D4A745] ">Barber Shop</Link>
 
 
         <p>Conatct Us</p>

@@ -16,9 +16,9 @@
 .title {
     font-size: 18em;
     color: white;
-    align-items: center;
+    align-items: end;
     font-family: "Belleza", sans-serif;
-    font-weight: lighter;
+    font-weight: 200;
     text-transform: uppercase;
     white-space: nowrap;
     margin-top: auto;
@@ -33,7 +33,7 @@
     position: absolute;
     margin-top: auto;
     bottom: 35%;
-    font-family: "Concert One", sans-serif;
+    font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -53,6 +53,7 @@
     height: 170px;
     background-color: #000000;
     position: absolute;
+    left: -10%;
     bottom: -70px;
     filter: blur(40px);
     z-index: 5;

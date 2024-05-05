@@ -75,9 +75,8 @@ const ScrollAnimation = () => {
 
                 <div className={styles.serviceContainer}>
                     <h1 className={styles.serviceTitle}>A Range of premium Barber Services</h1>
-                    <p className={styles.serviceDescription}>The div below act just as a trigger. As the doc suggests, the trigger and
-                        the animation should alway be two separated refs. As the doc suggests, the trigger and
-                        the animation should alway be two separated refs</p>
+                    <p className={styles.serviceDescription}>Detailed descriptions of all the services you offer, such as haircuts, beard trims, hot towel shaves Pricing for each service.
+                        Option to book appointments directly from the services page</p>
                 </div>
 
                 <div ref={sectionRef} className={styles.scrollSectionInner}>

@@ -17,7 +17,7 @@ const HeroSection = () => {
     })
 
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const x = useTransform(scrollYProgress, [0, 1], [0, -700]);
+    const x = useTransform(scrollYProgress, [0, 1], [0, -600]);
 
 
     const togglePlayPause = () => {
@@ -59,7 +59,7 @@ const HeroSection = () => {
                     <source src="/Video/barberShop1.mp4" type="video/mp4" />
                 </video>
                 <h1 className={styles.welcomeTitle}>Welcome</h1>
-                <motion.h1 style={{ x }} className={styles.title}>Your Hairdresser</motion.h1>
+                <motion.h1 style={{ x }} className={styles.title}> barber Shop barber</motion.h1>
 
             </div>
             <div className={styles.blur}></div>

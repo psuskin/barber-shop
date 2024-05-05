@@ -5,6 +5,7 @@ import ScrollAnimation from '@/components/UI/HomePage/ScrollParallax/ScrollAnima
 import AboutUs from '@/components/UI/HomePage/AboutUs/AboutUs';
 import Pricing from '@/components/UI/HomePage/Pricing/Pricing';
 import ZoomParallax from '@/components/UI/HomePage/ZoomParallax/ZoomParallax';
+import Team from '@/components/UI/HomePage/Team/Team';
 
 const HomePage = () => {
 
@@ -13,8 +14,9 @@ const HomePage = () => {
       <HeroSection />
       <ScrollAnimation />
       <Pricing />
-      <ZoomParallax />
       <AboutUs />
+      <ZoomParallax />
+      <Team />
       {/* <Gallery /> */}
     </div>
   );
