@@ -13,11 +13,11 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
-      {/* <ScrollAnimation /> */}
+      <ScrollAnimation />
       <Pricing />
       <AboutUs />
-      {/* <ZoomParallax /> */}
-      {/* <Team /> */}
+      <ZoomParallax />
+      <Team />
       <Review />
       {/* <Gallery /> */}
     </div>
