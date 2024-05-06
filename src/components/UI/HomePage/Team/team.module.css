@@ -6,8 +6,9 @@
     margin-top: 60px;
 }
 
-.textContainer {
+/* .textContainer {
     margin-bottom: 4em;
+    margin-top: 4em;
 }
 
 .textContainer h3 {
@@ -23,7 +24,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 1.1em;
-}
+} */
 
 .imageContainer {
     display: flex;
@@ -54,3 +55,7 @@
     color: #ffffff;
     margin-bottom: 1rem;
 }
+
+.teamImage {
+    transition: opacity 1s ease-in-out;
+  }

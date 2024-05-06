@@ -6,17 +6,19 @@ import AboutUs from '@/components/UI/HomePage/AboutUs/AboutUs';
 import Pricing from '@/components/UI/HomePage/Pricing/Pricing';
 import ZoomParallax from '@/components/UI/HomePage/ZoomParallax/ZoomParallax';
 import Team from '@/components/UI/HomePage/Team/Team';
+import Review from '@/components/UI/HomePage/Review/Review';
 
 const HomePage = () => {
 
   return (
     <div>
       <HeroSection />
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
       <Pricing />
       <AboutUs />
-      <ZoomParallax />
-      <Team />
+      {/* <ZoomParallax /> */}
+      {/* <Team /> */}
+      <Review />
       {/* <Gallery /> */}
     </div>
   );
