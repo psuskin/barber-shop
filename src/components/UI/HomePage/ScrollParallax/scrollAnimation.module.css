@@ -6,7 +6,7 @@
 
 .textContainer {
     top: 5em;
-    left: 10%;
+    left: 6%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 .serviceContainer {
     position: absolute;
     bottom: 5em;
-    right: 10%;
+    right: 6%;
     display: flex;
     align-items: center;
     width: 40%;

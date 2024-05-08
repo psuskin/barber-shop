@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from "./team.module.css"
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const teamMembers = [
   {
@@ -35,31 +36,54 @@ const teamMembers = [
 
 const Team = () => {
 
+  gsap.registerPlugin(ScrollTrigger);
+
   const [index, setIndex] = useState(0);
   const { picture, fullName, designation, bio } =
     teamMembers[index];
 
-    const handleControl = (type) => {
-      if (type === "prev") {
-        setIndex(index <= 0 ? teamMembers.length - 1 : index - 1);
-      } else {
-        setIndex(index >= teamMembers.length - 1 ? 0 : index + 1);
+  const handleControl = (type) => {
+    if (type === "prev") {
+      setIndex(index <= 0 ? teamMembers.length - 1 : index - 1);
+    } else {
+      setIndex(index >= teamMembers.length - 1 ? 0 : index + 1);
+    }
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex >= teamMembers.length - 1 ? 0 : prevIndex + 1));
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const triggerRef = useRef(null);
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      [titleRef.current, descriptionRef.current],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          start: 'top 60%',
+          end: 'bottom 90%',
+          scrub: 1
+        },
       }
-    };
-  
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setIndex((prevIndex) => (prevIndex >= teamMembers.length - 1 ? 0 : prevIndex + 1));
-      }, 5000); // Change slide every 5 seconds
-  
-      return () => clearInterval(intervalId);
-    }, []);
+    );
+  }, [])
 
   return (
-    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden my-10">
-      <div className="my-4 mb-10 space-y-2 lg:space-y-4 container mx-auto px-2">
-        <h3 className='text-[#D4A745] text-xl lg:text-[2em] uppercase font-semibold'>Meet Our Skilled Barbers</h3>
-        <h1 className='text-2xl lg:text-[3em] uppercase font-semibold'>Quality Services at Unbeatable Prices</h1>
+    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-6 mb-10" ref={triggerRef}>
+      <div className="mb-8 lg:mb-14 container mx-auto px-2">
+        <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold pb-2' ref={titleRef}>Meet Our Skilled Barbers</h3>
+        <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>
       </div>
       <div className='bg-orange-100'>
         <div className="container mx-auto">

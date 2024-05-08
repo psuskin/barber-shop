@@ -1,11 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-
 import { motion, useScroll, useTransform } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 const reviewList = [
     {
         author: {
@@ -87,26 +90,37 @@ const Review = () => {
         }
     };
 
-
+    const triggerRef = useRef(null);
+    const titleRef = useRef(null);
+    const descriptionRef = useRef(null);
     const imageRef = useRef();
     const { scrollYProgress } = useScroll({ target: imageRef });
     const y = useTransform(scrollYProgress, [0, 1], [-40, 10]);
 
-    return (
-        <section className="ezy__testimonial12 light relative py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1]">
-            <div className="container px-4 mx-auto">
-                <div className="flex justify-center text-center mb-6 lg:mb-12">
-                    <div className="max-w-md">
-                        <h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6">
-                            Community Reviews
-                        </h2>
-                        <p className="">
-                            Assumenda non repellendus distinctio nihil dicta sapiente,
-                            quibusdam maiores, illum at qui.
-                        </p>
-                    </div>
-                </div>
 
+    useEffect(() => {
+        gsap.fromTo(
+            [titleRef.current, descriptionRef.current],
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: triggerRef.current,
+                    start: 'top 60%',
+                    end: 'bottom 90%',
+                    scrub: 1
+                },
+            }
+        );
+    }, [])
+    return (
+        <section className="light relative md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1]" ref={triggerRef}>
+            <div className="my-4 mb-10 lg:mb-20 space-y-2 lg:space-y-4 container mx-auto px-2">
+                <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold' ref={titleRef}>Meet Our Skilled Barbers</h3>
+                <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>
+            </div>
+            <div className="container px-4 mx-auto">
                 <div className="flex justify-center mt-6">
                     <div className="lg:max-w-5xl">
                         <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-6">

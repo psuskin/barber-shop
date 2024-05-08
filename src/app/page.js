@@ -7,6 +7,7 @@ import Pricing from '@/components/UI/HomePage/Pricing/Pricing';
 import ZoomParallax from '@/components/UI/HomePage/ZoomParallax/ZoomParallax';
 import Team from '@/components/UI/HomePage/Team/Team';
 import Review from '@/components/UI/HomePage/Review/Review';
+import Product from '@/components/UI/HomePage/Product/Product';
 
 const HomePage = () => {
 
@@ -15,7 +16,8 @@ const HomePage = () => {
       <HeroSection />
       <ScrollAnimation />
       <Pricing />
-      <AboutUs />
+      {/* <AboutUs /> */}
+      <Product />
       <ZoomParallax />
       <Team />
       <Review />
