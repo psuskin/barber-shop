@@ -80,7 +80,7 @@ const Team = () => {
   }, [])
 
   return (
-    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-6 mb-10" ref={triggerRef}>
+    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-10 mb-10" ref={triggerRef}>
       <div className="mb-8 lg:mb-14 container mx-auto px-2">
         <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold pb-2' ref={titleRef}>Meet Our Skilled Barbers</h3>
         <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>

@@ -16,12 +16,12 @@ const HomePage = () => {
       <HeroSection />
       <ScrollAnimation />
       <Pricing />
-      {/* <AboutUs /> */}
       <Product />
       <ZoomParallax />
+      {/* <AboutUs /> */}
+      <Gallery />
       <Team />
       <Review />
-      {/* <Gallery /> */}
     </div>
   );
 };

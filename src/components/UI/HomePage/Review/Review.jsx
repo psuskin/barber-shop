@@ -115,7 +115,7 @@ const Review = () => {
         );
     }, [])
     return (
-        <section className="light relative md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1]" ref={triggerRef}>
+        <section className="light relative mb-4 lg:mb-2 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1]" ref={triggerRef}>
             <div className="my-4 mb-10 lg:mb-20 space-y-2 lg:space-y-4 container mx-auto px-2">
                 <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold' ref={titleRef}>Meet Our Skilled Barbers</h3>
                 <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>

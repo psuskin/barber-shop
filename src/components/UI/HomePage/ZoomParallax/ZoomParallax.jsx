@@ -59,12 +59,12 @@ const ZoomParallax = () => {
         }
     ]
 
-    
+
     return (
         <div ref={container} className={styles.container}>
-            <div className={styles.textContainer}>
-                <h3 ref={titleRef}>Our Works</h3>
-                <h1 ref={descriptionRef}>Lorem ipsum dolor sit amet ipsum dolor</h1>
+            <div className="flex flex-col ml-4 lg:ml-48 w-full lg:w-2/5 items-start z-10 mt-16 lg:-mt-16">
+                <h3 ref={titleRef} className="uppercase text-xl lg:text-[1.5rem] font-bold text-[#D4A745]">Our Works</h3>
+                <h1 ref={descriptionRef} className="text-2xl lg:text-[2rem] font-semibold uppercase tracking-wide leading-tight">Lorem ipsum dolor sit amet ipsum dolor</h1>
             </div>
             <div className={styles.sticky}>
                 {

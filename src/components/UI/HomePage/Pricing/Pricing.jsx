@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Pricing = () => {
 
     const priceItems = [
-        { title: "Basic Haircut", description: "Classic haircut with clippers for a timeless look. Our skilled barbers ensure a clean and stylish cut.", price: "$25" },
-        { title: "Scissor Cut", description: "Precision scissor cut for a tailored hairstyle. Let our experts give you the perfect look with precise techniques.", price: "$30" },
+        { title: "Basic Haircut", description: "Classic haircut with clippers for a timeless look for fashion. Our skilled barbers ensure a clean and stylish cut and more styles.", price: "$25" },
+        { title: "Scissor Cut", description: "Precision scissor cut for a tailored hairstyle. Let our experts give you the perfect look with precise techniques and cuts.", price: "$30" },
         { title: "Beard Trim", description: "Expert beard trim to shape and refine your facial hair. Our barbers will sculpt your beard to complement your features.", price: "$15" },
         { title: "Beard Trim", description: "Expert beard trim to shape and refine your facial hair. Our barbers will sculpt your beard to complement your features.", price: "$15" },
         { title: "Beard Trim", description: "Expert beard trim to shape and refine your facial hair. Our barbers will sculpt your beard to complement your features.", price: "$15" },
@@ -19,6 +19,7 @@ const Pricing = () => {
     const triggerRef = useRef(null);
     const titleRef = useRef(null);
     const descriptionRef = useRef(null);
+    const imageRef = useRef(null);
 
     useEffect(() => {
         gsap.fromTo(
@@ -35,7 +36,25 @@ const Pricing = () => {
                 },
             }
         );
+
+        gsap.to(
+            imageRef.current,
+            {
+                filter: 'grayscale(0)',
+                scale: 1,
+                transformOrigin: '50% 50%',
+                scrollTrigger: {
+                    trigger: imageRef.current,
+                    start: 'top 60%',
+                    end: 'bottom 90%',
+                    scrub: 1,
+                },
+            }
+        );
+
     }, [])
+
+
     return (
         <div className="pricingContainer max-h-screen container mx-auto flex relative px-4 mb-10 md:mb-20 lg:mb-20" ref={triggerRef}>
             <div className="priceSection w-full md:w-3/5 mx-auto pr-0 md:pr-24">
@@ -57,8 +76,8 @@ const Pricing = () => {
                 </div>
             </div>
             <div className="bannerSection w-2/5 relative md:block hidden">
-                <div className="bannerImage absolute top-0 right-0 w-full h-full overflow-hidden hover:blur-[2px] transition-all">
-                    <Image src="/Images/barber10.jpg" alt="Pricing Banner" fill objectFit="cover" />
+                <div className="bannerImage absolute top-0 right-0 w-full h-full overflow-hidden" ref={triggerRef}>
+                    <Image ref={imageRef} src="/Images/barber10.jpg" alt="Pricing Banner" fill objectFit="cover" style={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }} />
                 </div>
             </div>
         </div>

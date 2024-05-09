@@ -23,6 +23,7 @@
     white-space: nowrap;
     margin-top: auto;
     margin-bottom: 0;
+    z-index: 10;
 }
 
 
@@ -81,4 +82,28 @@
     border-radius: 50%;
     display: flex;
     align-items: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 10em;
+        /* Adjusted font size for smaller screens */
+        z-index: 1;
+    }
+
+    .welcomeTitle {
+        font-size: 3em;
+        /* Adjusted font size for smaller screens */
+        bottom: 30%;
+        /* Adjusted position for smaller screens */
+    }
+
+    .muteBtn,
+    .playPauseBtn {
+        bottom: 1rem;
+        /* Adjusted button position for smaller screens */
+        padding: 0.4rem;
+        /* Adjusted button padding for smaller screens */
+    }
 }

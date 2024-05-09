@@ -4,8 +4,7 @@ import styles from './style.module.css'
 import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
-import ScrollParallax from '../ScrollParallax/ScrollAnimation';
-import ScrollAnimation from '../ScrollParallax/ScrollAnimation';
+import AboutUs from '../AboutUs/AboutUs';
 
 const images = [
     "1.jpg",
@@ -60,14 +59,16 @@ const Gallery = () => {
 
     return (
         <main className={styles.main}>
-            {/* <div className={styles.spacer}></div> */}
+            <div className={styles.spacer}>
+                <AboutUs />
+            </div>
             <div ref={gallery} className={styles.gallery}>
                 <Column images={[images[0], images[1], images[2]]} y={y} />
                 <Column images={[images[3], images[4], images[5]]} y={y2} />
                 <Column images={[images[6], images[7], images[8]]} y={y3} />
                 <Column images={[images[9], images[10], images[11]]} y={y4} />
             </div>
-            <div className={styles.spacer}></div>
+            {/* <div className={styles.spacer}></div> */}
         </main>
     )
 }

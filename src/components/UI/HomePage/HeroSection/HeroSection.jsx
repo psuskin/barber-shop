@@ -58,7 +58,7 @@ const HeroSection = () => {
                 >
                     <source src="/Video/barberShop1.mp4" type="video/mp4" />
                 </video>
-                <h1 className={styles.welcomeTitle}>Welcome</h1>
+                <h1 className={styles.welcomeTitle}>Welcome to</h1>
                 <motion.h1 style={{ x }} className={styles.title}> barber Shop barber</motion.h1>
 
             </div>
