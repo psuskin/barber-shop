@@ -132,7 +132,7 @@ const Review = () => {
                                         ref={imageRef}
                                         src={author.picture}
                                         alt={author.fullName}
-                                        layout="fill"
+                                        fill
                                         objectFit="cover"
                                         className="rounded-3xl"
                                     />

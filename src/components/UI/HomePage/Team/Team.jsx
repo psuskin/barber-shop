@@ -93,7 +93,7 @@ const Team = () => {
                 <Image
                   src={picture}
                   alt={fullName}
-                  layout="fill"
+                  fill
                   objectFit="cover"
                   className={styles.teamImage}
                 />

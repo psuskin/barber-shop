@@ -51,3 +51,16 @@
 .spacer {
     height: 120vh;
 }
+
+
+@media (max-width: 768px) {
+    .gallery .column {
+        min-width: 190px;
+        gap: 1vw;
+    }
+
+    .gallery {
+        gap: 1vw;
+    }
+
+}

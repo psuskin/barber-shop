@@ -107,46 +107,6 @@ const ScrollAnimation = () => {
                     </div>
                 </div>
             </section>
-
-        // <div className="scrollSectionOuter relative bg-black mb-10" ref={triggerRef}>
-        //     <div className="textContainer top-[10%] left-[10%] md:w-2/5 md:text-left md:top-5 md:left-0">
-        //         <h1 className="title text-white text-2xl md:text-3xl font-bold uppercase" ref={titleRef}>Our Service</h1>
-        //         <p className="description text-white text-3xl md:text-4xl font-semibold uppercase leading-tight" ref={descriptionRef}>A Range of premium Barber Services</p>
-        //     </div>
-
-        //     <div className="serviceContainer bottom-[10%] right-[6%] md:w-2/5 md:text-right md:bottom-[5%] md:right-[0%] md:bg-beige md:p-10">
-        //         <h1 className="serviceTitle text-black text-2xl md:text-3xl font-bold uppercase md:text-left md:mb-5">A Range of premium Barber Services</h1>
-        //         <p className="serviceDescription text-black text-sm md:text-base font-semibold text-justify">Detailed descriptions of all the services you offer, such as haircuts, beard trims, hot towel shaves Pricing for each service. Option to book appointments directly from the services page</p>
-        //     </div>
-
-        //     <div className="scrollSectionInner h-screen md:h-auto w-full md:w-[200vw]" ref={sectionRef}>
-        //         <div className="scrollSection h-screen w-4/5 flex justify-center items-center">
-        //             <div className="cardSection relative">
-        //                 <h1 className="imageTitle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-bold uppercase z-10">Styles</h1>
-        //                 <Image className="image w-full h-3/4 object-cover filter brightness-80" src="/Images/10.jpg" alt='Images' width={300} height={400} />
-        //             </div>
-        //         </div>
-        //         <div className="scrollSection h-screen w-4/5 flex justify-center items-center">
-        //             <div className="cardSection relative">
-        //                 <h1 className="imageTitle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-bold uppercase z-10">Barber Spa</h1>
-        //                 <Image className="image w-full h-[70vh] object-cover filter brightness-75" src="/Images/11.jpg" alt='Images' width={300} height={400} />
-        //             </div>
-        //         </div>
-        //         <div className="scrollSection h-screen w-4/5 flex justify-center items-center">
-        //             <div className="cardSection relative">
-        //                 <h1 className="imageTitle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-bold uppercase z-10">Shaves</h1>
-        //                 <Image className="image w-full h-3/4 object-cover filter brightness-80" src="/Images/3.jpg" alt='Images' width={300} height={400} />
-        //             </div>
-        //         </div>
-        //         <div className="scrollSection h-screen w-4/5 flex justify-center items-center">
-        //             <div className="cardSection relative">
-        //                 <h1 className="imageTitle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-bold uppercase z-10">Hair Cuts</h1>
-        //                 <Image className="image w-full h-3/4 object-cover filter brightness-80" src="/Images/11.jpg" alt='Images' width={300} height={400} />
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
-
     );
 };
 

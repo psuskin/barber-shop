@@ -8,13 +8,15 @@ import ZoomParallax from '@/components/UI/HomePage/ZoomParallax/ZoomParallax';
 import Team from '@/components/UI/HomePage/Team/Team';
 import Review from '@/components/UI/HomePage/Review/Review';
 import Product from '@/components/UI/HomePage/Product/Product';
+import Service from '@/components/UI/HomePage/Service/Service';
 
 const HomePage = () => {
-
+   
   return (
     <div>
       <HeroSection />
-      <ScrollAnimation />
+      <Service />
+      {/* <ScrollAnimation /> */}
       <Pricing />
       <Product />
       <ZoomParallax />
