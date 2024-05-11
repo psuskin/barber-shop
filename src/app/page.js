@@ -9,9 +9,10 @@ import Team from '@/components/UI/HomePage/Team/Team';
 import Review from '@/components/UI/HomePage/Review/Review';
 import Product from '@/components/UI/HomePage/Product/Product';
 import Service from '@/components/UI/HomePage/Service/Service';
+import Blog from '@/components/UI/HomePage/Blog/Blog';
 
 const HomePage = () => {
-   
+
   return (
     <div>
       <HeroSection />
@@ -20,10 +21,10 @@ const HomePage = () => {
       <Pricing />
       <Product />
       <ZoomParallax />
-      {/* <AboutUs /> */}
       <Gallery />
       <Team />
       <Review />
+      <Blog />
     </div>
   );
 };

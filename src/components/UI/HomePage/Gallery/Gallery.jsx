@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 import AboutUs from '../AboutUs/AboutUs';
+import DiscountPage from '../DiscountPage/DiscountPage';
 
 const images = [
     "1.jpg",
@@ -34,7 +35,7 @@ const Gallery = () => {
     const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
     const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
     const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
-    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5])
+    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
 
     useEffect(() => {
         const lenis = new Lenis()
@@ -68,7 +69,9 @@ const Gallery = () => {
                 <Column images={[images[6], images[7], images[8]]} y={y3} />
                 <Column images={[images[9], images[10], images[11]]} y={y4} />
             </div>
-            {/* <div className={styles.spacer}></div> */}
+            {/* <div className={styles.spacer}>
+                <DiscountPage />
+            </div> */}
         </main>
     )
 }

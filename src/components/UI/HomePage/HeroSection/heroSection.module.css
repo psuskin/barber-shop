@@ -108,7 +108,7 @@
     }
 
     .blur {
-        filter: none;
-        /* Remove blur effect */
+        display: none;
+        /* Hide the blur element on smaller screens */
     }
 }
