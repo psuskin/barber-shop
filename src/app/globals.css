@@ -18,7 +18,7 @@ body {
 }
 
 :root {
-    --fancyHeader: "Dancing Script", cursive;
+    --fancyHeader: "Dancing Script", sans-serif;
     --header-color: #D4A745;
 
     /* Paragraph color variable */

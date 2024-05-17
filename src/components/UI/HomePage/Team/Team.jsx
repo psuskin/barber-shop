@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const teamMembers = [
   {
-    picture: "/Images/berber.jpg",
+    picture: "/Images/team.jpg",
     fullName: "Karim Ahmedd",
     designation: "Master Barber / Founder",
     bio: "With a passion for barbering and a keen eye for detail, Karim is the driving force behind our shop. As a master barber, he specializes in classic cuts and modern styles, ensuring every client leaves feeling confident and refreshed. Trust Karim for a haircut that exceeds your expectations.",
@@ -36,7 +36,7 @@ const teamMembers = [
 
 const Team = () => {
 
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
   const [index, setIndex] = useState(0);
   const { picture, fullName, designation, bio } =
@@ -53,37 +53,37 @@ const Team = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex >= teamMembers.length - 1 ? 0 : prevIndex + 1));
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
-  const triggerRef = useRef(null);
-  const titleRef = useRef(null);
-  const descriptionRef = useRef(null);
+  // const triggerRef = useRef(null);
+  // const titleRef = useRef(null);
+  // const descriptionRef = useRef(null);
 
-  useEffect(() => {
-    gsap.fromTo(
-      [titleRef.current, descriptionRef.current],
-      { opacity: 0 },
-      {
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: 'top 60%',
-          end: 'bottom 90%',
-          scrub: 1
-        },
-      }
-    );
-  }, [])
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     [titleRef.current, descriptionRef.current],
+  //     { opacity: 0 },
+  //     {
+  //       opacity: 1,
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: triggerRef.current,
+  //         start: 'top 60%',
+  //         end: 'bottom 90%',
+  //         scrub: 1
+  //       },
+  //     }
+  //   );
+  // }, [])
 
   return (
-    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-10 mb-10" ref={triggerRef}>
+    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-10 mb-10">
       <div className="mb-8 lg:mb-14 container mx-auto px-2">
-        <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold pb-2' ref={titleRef}>Meet Our Skilled Barbers</h3>
-        <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>
+        <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-Dancing pb-2'>Unser Team</h3>
+        <h1 className='text-2xl lg:text-[2rem] font-semibold'>Lernen Sie unsere erfahrenen Styler kennen</h1>
       </div>
       <div className='bg-orange-100'>
         <div className="container mx-auto">
@@ -105,7 +105,7 @@ const Team = () => {
                 <p className="mb-6">{designation}</p>
                 <p className="opacity-50 mb-0 leading-7">{bio}</p>
               </div>
-              <div className="absolute w-24 text-right right-[13%] -bottom-6 lg:bottom-0 text-[150px] text-[#dbac47] dark:text-slate-700 font-medium">
+              <div className="absolute w-24 text-right right-[13%] -bottom-6 lg:bottom-0 text-[150px] text-[#dbac47] dark:text-slate-700 font-Dancing">
                 {index + 1}
               </div>
               <div className="-mt-10 -translate-y-7">

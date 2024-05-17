@@ -5,20 +5,19 @@ import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 import AboutUs from '../AboutUs/AboutUs';
-import DiscountPage from '../DiscountPage/DiscountPage';
 
 const images = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "5.jpg",
-    "6.jpg",
-    "7.jpg",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
+    "work.jpg",
+    "work2.jpg",
+    "work3.jpg",
+    "work4.jpg",
+    "work3.jpg",
+    "work5.jpg",
+    "work1.jpg",
+    "work6.jpg",
+    "work7.jpg",
+    "work8.jpg",
+    "work8.jpg",
     "12.jpg",
 ]
 

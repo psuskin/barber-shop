@@ -3,13 +3,13 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from "./zoom.module.css"
 
-import Picture1 from '../../../../../public/Images/11.jpg';
-import Picture2 from '../../../../../public/Images/2.jpg';
-import Picture3 from '../../../../../public/Images/3.jpg';
-import Picture4 from '../../../../../public/Images/4.jpg'
-import Picture5 from '../../../../../public/Images/5.jpg'
-import Picture6 from '../../../../../public/Images/6.jpg'
-import Picture7 from '../../../../../public/Images/7.jpg'
+import Picture1 from '../../../../../public/Images/work1.jpg';
+import Picture2 from '../../../../../public/Images/work3.jpg';
+import Picture3 from '../../../../../public/Images/work2.jpg';
+import Picture4 from '../../../../../public/Images/work3.jpg'
+import Picture5 from '../../../../../public/Images/work4.jpg'
+import Picture6 from '../../../../../public/Images/work5.jpg'
+import Picture7 from '../../../../../public/Images/work6.jpg'
 
 const ZoomParallax = () => {
 
@@ -62,9 +62,9 @@ const ZoomParallax = () => {
 
     return (
         <div ref={container} className={styles.container}>
-            <div className="container mx-auto flex flex-col justify-center w-full items-start z-10 mt-16 lg:-mt-16 px-4">
-                <h3 ref={titleRef} className="uppercase text-xl lg:text-[1.5rem] font-bold text-[#D4A745]">Our Works</h3>
-                <h1 ref={descriptionRef} className="text-2xl lg:text-[2rem] font-semibold uppercase tracking-wide leading-tight">Lorem ipsum dolor sit amet ipsum dolor</h1>
+            <div className="container mx-auto flex flex-col justify-center w-full items-start z-10 mt-16 lg:-mt-16 px-4 ">
+                <h3 ref={titleRef} className="text-xl lg:text-[2rem] font-bold text-[#D4A745] font-Dancing">Unsere Arbeiten</h3>
+                <h1 ref={descriptionRef} className="text-2xl lg:text-[2rem] font-semibold tracking-wide leading-tight">Entdecken Sie unsere kreativen Werke und inspirierenden Projekte</h1>
             </div>
             <div className={styles.sticky}>
                 {
@@ -75,7 +75,6 @@ const ZoomParallax = () => {
                                     src={src}
                                     fill
                                     alt="image"
-                                    placeholder='blur'
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                             </div>

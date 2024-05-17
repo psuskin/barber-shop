@@ -1,6 +1,7 @@
 .container {
     height: 250vh;
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .sticky {

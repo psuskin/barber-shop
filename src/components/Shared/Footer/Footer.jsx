@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaMap } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaMap, FaTiktok } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import styles from './footer.module.css';
 import Image from 'next/image';
@@ -89,6 +89,18 @@ function Footer() {
                                     <span className="sr-only">Instagram</span>
 
                                     <FaInstagram className='w-8 h-8' />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    className="text-gray-700 transition hover:opacity-75"
+                                >
+                                    <span className="sr-only">Tiktok</span>
+
+                                    <FaTiktok className='w-8 h-8' />
                                 </a>
                             </li>
 

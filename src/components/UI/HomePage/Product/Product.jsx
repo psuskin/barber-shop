@@ -66,7 +66,8 @@ const Product = () => {
         <section className="light py-10 lg:py-20 lg:mb-48 mb-0 md:mb-48 bg-gray-100 dark:bg-[#0b1727] text-black text-opacity-80 dark:text-white">
             <div className="container px-4 mx-auto">
                 <div className="justify-center mb-6 md:mb-12 space-y-4">
-                    <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold'>Our Latest Products</h3>
+                    <h3 className="text-xl lg:text-[2rem] font-bold text-[#D4A745] font-Dancing">Produkte</h3>
+                    <h1 className='text-xl lg:text-[1.5rem] font-semibold'>Entdecken Sie unser exquisites Sortiment an Schönheitsprodukten</h1>
                 </div>
 
                 <div className="grid grid-cols-12 gap-2 md:gap-6">

@@ -4,11 +4,11 @@ import { FaChevronLeft, FaChevronRight, FaStar, FaStarHalfAlt } from "react-icon
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 const reviewList = [
     {
         author: {
@@ -90,35 +90,46 @@ const Review = () => {
         }
     };
 
-    const triggerRef = useRef(null);
-    const titleRef = useRef(null);
-    const descriptionRef = useRef(null);
+    // const triggerRef = useRef(null);
+    // const titleRef = useRef(null);
+    // const descriptionRef = useRef(null);
     const imageRef = useRef();
     const { scrollYProgress } = useScroll({ target: imageRef });
     const y = useTransform(scrollYProgress, [0, 1], [-40, 10]);
 
 
     useEffect(() => {
-        gsap.fromTo(
-            [titleRef.current, descriptionRef.current],
-            { opacity: 0 },
-            {
-                opacity: 1,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: triggerRef.current,
-                    start: 'top 60%',
-                    end: 'bottom 90%',
-                    scrub: 1
-                },
-            }
-        );
-    }, [])
+        const intervalId = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex >= reviewList.length - 1 ? 0 : prevIndex + 1));
+        }, 4500); 
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+    // useEffect(() => {
+    //     gsap.fromTo(
+    //         [titleRef.current, descriptionRef.current],
+    //         { opacity: 0, y: 100 },
+    //         {
+    //             opacity: 1,
+    //             y: 0,
+    //             duration: 1,
+    //             stagger: 0.5,
+    //             ease: 'power2.out',
+    //             scrollTrigger: {
+    //                 trigger: triggerRef.current,
+    //                 start: 'top 50%',
+    //                 end: 'bottom 60%',
+    //                 scrub: 1
+    //             },
+    //         }
+    //     );
+    // }, []);
     return (
-        <section className="light relative mb-4 lg:mb-2 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1]" ref={triggerRef}>
-            <div className="my-4 mb-10 lg:mb-20 space-y-2 lg:space-y-4 container mx-auto px-2">
-                <h3 className='text-[#D4A745] text-xl lg:text-[1.5rem] uppercase font-semibold' ref={titleRef}>Meet Our Skilled Barbers</h3>
-                <h1 className='text-2xl lg:text-[2rem] uppercase font-semibold' ref={descriptionRef}>Quality Services at Unbeatable Prices</h1>
+        <section className="light relative mb-60 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1] ">
+            <div className="my-4 mb-10 lg:mb-20 container mx-auto px-2">
+                <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-semibold font-Dancing'>Kundenstimmen</h3>
+                <h1 className='text-2xl lg:text-[2rem] font-semibold'>Was unsere Kunden über uns sagen</h1>
             </div>
             <div className="container px-4 mx-auto">
                 <div className="flex justify-center mt-6">
@@ -139,7 +150,7 @@ const Review = () => {
                                 </motion.div>
                             </div>
                             <div className="md:w-1/2 relative">
-                                <div className="absolute -top-[10%] md:top-0 right-0 left-0 md:-left-[20%] bottom-0 bg-gray-700 dark:bg-gray-800 -z-[1] rounded-xl"></div>
+                                <div className="absolute -top-[10%] md:top-0 right-0 left-0 md:-left-[20%] bottom-0 bg-gray-600 dark:bg-gray-800 -z-[1] rounded-xl"></div>
                                 <div className="flex flex-col justify-center h-full mb-10 md:mb-0 text-white">
                                     <div className="p-6 lg:py-16 mb-6">
                                         <h4 className="text-2xl font-bold mb-4">

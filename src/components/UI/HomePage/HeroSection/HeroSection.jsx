@@ -1,23 +1,15 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import styles from "./heroSection.module.css"
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis';
+import Image from 'next/image';
 const HeroSection = () => {
-    const titleRef = useRef(null);
     const videoRef = useRef(null);
-    const container = useRef(null);
+    const containerRef = useRef();
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
 
-    // const { scrollYProgress } = useScroll();
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ['start end', 'end start']
-    })
-
-    const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const x = useTransform(scrollYProgress, [0, 1], [0, -600]);
 
 
     const togglePlayPause = () => {
@@ -47,8 +39,8 @@ const HeroSection = () => {
 
 
     return (
-        <div className={styles.container} ref={container}>
-            <div className={styles.videoContainer}>
+        <div className={styles.container} >
+            <div className={styles.videoContainer} ref={containerRef}>
                 <video
                     ref={videoRef}
                     className={styles.video}
@@ -58,8 +50,10 @@ const HeroSection = () => {
                 >
                     <source src="/Video/barberShop1.mp4" type="video/mp4" />
                 </video>
-                <h1 className={styles.welcomeTitle}>Welcome to</h1>
-                <motion.h1 style={{ x }} className={styles.title}> barber Shop barber</motion.h1>
+                <h1 className={styles.welcomeTitle}>Willkommen im Hannis Friseursalon</h1>
+                <h1 className={styles.title}>Exzellenz in Schönheit</h1>
+                {/* <Image className='absolute bottom-56' src="/Images/logo.png" width={200} height={200} alt='logo' /> */}
+
 
             </div>
             <div className={styles.blur}></div>
