@@ -1,62 +1,49 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
-import React, { useRef } from 'react';
-
-
-// const categories = [
-//     { label: "All", value: "", isActive: false },
-//     { label: "Hair", value: "Hair", isActive: true },
-//     { label: "Beard", value: "Beard", isActive: false },
-//     { label: "Skin Care", value: "Skin Care", isActive: false },
-//     { label: "Nail", value: "Nail", isActive: false },
-//     { label: "Massage", value: "Massage", isActive: false },
-//     { label: "Hair Removal", value: "Hair Removal", isActive: false },
-//     { label: "Makeup", value: "Makeup", isActive: false },
-// ];
 
 
 const productsList = [
     {
         image: "/Images/product1.jpg",
-        title: "Haircut & Styling",
-        categories: ["Hair Services"],
+        title: "Shampoos & Conditioner",
+        categories: ["Haarwelt"],
     },
     {
         image: "/Images/product2.jpg",
-        title: "Beard Trim",
-        categories: ["Beard Services"],
+        title: "Haarmasken & Behandlungen",
+        categories: ["Haarwelt"],
     },
     {
         image: "/Images/product3.jpg",
-        title: "Facial Treatment",
-        categories: ["Skin Care"],
+        title: "Tiefenpflegende Behandlungen",
+        categories: ["Hair SPA"],
     },
     {
         image: "/Images/product4.jpg",
-        title: "Manicure & Pedicure",
-        categories: ["Nail Services"],
+        title: "Kopfhautbehandlungen",
+        categories: ["Hair SPA"],
     },
     {
         image: "/Images/product5.jpg",
-        title: "Spa Massage",
-        categories: ["Massage Services"],
+        title: "Fußcremes & Balsame",
+        categories: ["Med. Fusspflege"],
     },
     {
-        image: "/Images/product8.jpg",
-        title: "Waxing",
-        categories: ["Hair Removal"],
+        image: "/Images/product4.jpg",
+        title: "Fußpeelings & Schrubber",
+        categories: ["Med. Fusspflege"],
     },
     {
         image: "/Images/product7.jpg",
-        title: "Makeup",
-        categories: ["Makeup Services"],
+        title: "Foundations & Concealer",
+        categories: ["Kosmetik"],
     },
     {
         image: "/Images/product8.jpg",
-        title: "Hair Color",
-        categories: ["Hair Services"],
-    },
+        title: "Lippenstifte & Lipglosse",
+        categories: ["Kosmetik"],
+    }
 ];
+
 
 
 const Product = () => {

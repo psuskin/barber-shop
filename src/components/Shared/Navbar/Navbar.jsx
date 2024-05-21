@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./style.module.css"
-import { Link as ScrollLink } from "react-scroll";
 import { FaCaretDown } from "react-icons/fa";
 
 
@@ -122,52 +121,30 @@ const Navbar = () => {
   return (
     <div className={`fixed w-full mx-auto text-white z-30 transition-transform duration-300 transform ${show ? '-translate-y-full' : 'translate-y-0'}`}>
       <nav className="sticky-navbar">
-        <div className="container mx-auto bg-transparent ">
+        <div className="container mx-auto bg-transparent">
           <div className="flex justify-between items-center mx-auto w-full py-6 backdrop-blur-md rounded-b-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
             <div>
-              <Link
-                href="/"
-                className="flex items-center gap-1 font-bold text-gray-100 cursor-pointer pl-8"
-                spy={true}
-                smooth={true}
-                duration={800}
-              >
+              <Link href="/" className="flex items-center gap-1 font-bold text-gray-100 cursor-pointer pl-8" spy={true} smooth={true} duration={800}>
                 <h1 className="uppercase text-xl">Hannis Friseursalon</h1>
               </Link>
             </div>
             {/* Primary menu */}
-            <div
-              className={`${styles.content__item} hidden lg:flex gap-8 text-lg pr-8`}
-            >
+            <div className={`${styles.content__item} hidden lg:flex gap-8 text-lg pr-8`}>
               {navLinks.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  smooth={true}
-                  duration={800}
-                  className={`${styles.linkMneme} ${styles.link}`}
-                >
+                <Link key={index} href={link.href} smooth={true} duration={800} className={`${styles.linkMneme} ${styles.link}`}>
                   {link.title}
                 </Link>
               ))}
               {/* Dropdown for Service section */}
-              <div
-                onMouseEnter={() => setHoverService(true)}
-                onMouseLeave={() => setHoverService(false)}
-                className="relative"
-              >
-                <p className="cursor-pointer uppercase flex items-center justify-between " >
-                  Dienstleistung < FaCaretDown />
+              <div onMouseEnter={() => setHoverService(true)} onMouseLeave={() => setHoverService(false)} className="relative">
+                <p className="cursor-pointer uppercase flex gap-2 items-center justify-between">
+                  Dienstleistung <FaCaretDown />
                   {hoverService && (
-                    <motion.div
-                      variants={menuVars}
-                      initial="initial"
-                      animate="animate"
-                      exit="exit"
-                      className="absolute left-0 top-full text-nowrap rounded-md shadow-lg normal-case p-2 backdrop-blur-md " style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-                    >
+                    <motion.div variants={menuVars} initial="initial" animate="animate" exit="exit" className="absolute left-0 top-full text-nowrap rounded-md shadow-lg normal-case p-2 backdrop-blur-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                       {serviceOptions.map((option, index) => (
-                        <p key={index} className={`${styles.linkMneme} ${styles.link} cursor-pointerp-1`} >{option}</p>
+                        <p key={index} className={`${styles.linkMneme} ${styles.link} cursor-pointer p-1`}>
+                          {option}
+                        </p>
                       ))}
                     </motion.div>
                   )}
@@ -178,17 +155,11 @@ const Navbar = () => {
             {/* Secondary menu */}
             <div className="flex items-center lg:hidden pr-8">
               {open ? (
-                <button
-                  className="text-gray-100 focus:outline-none"
-                  onClick={toggleMenus}
-                >
+                <button className="text-gray-100 focus:outline-none" onClick={toggleMenus}>
                   <AiOutlineClose className="h-6 w-6" />
                 </button>
               ) : (
-                <button
-                  className="text-gray-100 focus:outline-none"
-                  onClick={toggleMenus}
-                >
+                <button className="text-gray-100 focus:outline-none" onClick={toggleMenus}>
                   <AiOutlineBars className="h-6 w-6" />
                 </button>
               )}
@@ -198,40 +169,30 @@ const Navbar = () => {
       </nav>
       <AnimatePresence>
         {open && (
-          <motion.div
-            variants={menuVars}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-[#D4A745] text-black p-10 z-50"
-          >
+          <motion.div variants={menuVars} initial="initial" animate="animate" exit="exit" className="fixed left-0 top-0 w-full h-screen origin-top bg-[#D4A745] text-black p-10 z-50">
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
                 <h1 className="text-3xl text-black uppercase">Hannis Friseursalon</h1>
-                <p
-                  className="cursor-pointer text-md text-black"
-                  onClick={toggleMenus}
-                >
+                <p className="cursor-pointer text-md text-black" onClick={toggleMenus}>
                   <AiOutlineClose className="h-6 w-6" />
                 </p>
               </div>
-              <motion.div
-                variants={containerVars}
-                initial="initial"
-                animate="open"
-                exit="initial"
-                className="flex flex-col h-full justify-center font-lora items-center gap-4"
-              >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div className="overflow-hidden" key={index}>
-                      <MobileNavLink
-                        title={link.title}
-                        href={link.href}
-                      />
-                    </div>
-                  );
-                })}
+              <motion.div variants={containerVars} initial="initial" animate="open" exit="initial" className="flex flex-col h-full justify-center font-lora items-center gap-4">
+                {navLinks.map((link, index) => (
+                  <div className="overflow-hidden" key={index}>
+                    <MobileNavLink title={link.title} href={link.href} />
+                  </div>
+                ))}
+                <div className="mt-8">
+                  <p className="text-3xl text-black uppercase">Dienstleistung</p>
+                  <div className="flex flex-col items-center mt-4">
+                    {serviceOptions.map((option, index) => (
+                      <motion.div key={index} variants={mobileLinkVars} className="text-2xl text-black">
+                        {option}
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
               </motion.div>
             </div>
           </motion.div>

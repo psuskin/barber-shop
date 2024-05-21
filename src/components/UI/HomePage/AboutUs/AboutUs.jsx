@@ -4,6 +4,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { FaAlignRight, FaChevronRight, FaLink } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import ImageReveal from "@/components/utils/ImageReveal";
 
 
 const AboutUs = () => {
@@ -18,11 +19,17 @@ const AboutUs = () => {
                 <div className="grid grid-cols-2 gap-6">
                     <div className="col-span-2 md:col-span-1">
                         <div className="md:p-12">
-                            <Image
+                            {/* <Image
                                 src="/Images/about.jpg"
                                 alt=""
                                 width={500}
                                 height={600}
+                            /> */}
+                            <ImageReveal
+                                src="/Images/about.jpg"
+                                alt="Image About"
+                                width={500}
+                                height={500}
                             />
                         </div>
                     </div>
@@ -60,7 +67,8 @@ const AboutUs = () => {
 
             <div className="flex justify-center items-center gap-4 mt-6 lg:mt-20 mb-4">
 
-                <h1 className="text-3xl text-center">Scroll</h1> < FaArrowDownLong className="text-4xl font-thin text-[#D4A745]" />
+                {/* <h1 className="text-3xl text-center">Scroll</h1>  */}
+                < FaArrowDownLong className="text-4xl animate-bounce font-thin text-[#D4A745]" />
             </div>
         </section>
     );

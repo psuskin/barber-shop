@@ -1,52 +1,114 @@
+import Head from 'next/head';
+import Image from 'next/image';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const ContactPage = () => {
     return (
-        <div className="container mx-auto py-12 px-4">
-            <h1 className="text-3xl md:text-4xl font-semibold mb-6 mt-36">Contact Us</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-                {/* Contact Information */}
-                <div>
-                    <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-                    <div className="flex items-center mb-4">
-                        <FaMapMarkerAlt className="text-gray-500 mr-2" />
-                        <p>123 Beauty Avenue, City, Country</p>
-                    </div>
-                    <div className="flex items-center mb-4">
-                        <FaPhoneAlt className="text-gray-500 mr-2" />
-                        <p>(123) 456-7890</p>
-                    </div>
-                    <div className="flex items-center mb-4">
-                        <FaEnvelope className="text-gray-500 mr-2" />
-                        <p>info@beautysalon.com</p>
+        <>
+            <div className="min-h-screen bg-white mb-40">
+                <div className="relative h-96 w-full">
+                    <Image
+                        fill
+                        src="/Images/ff.jpg"
+                        alt="Contact Banner"
+                        className="object-cover w-full h-full"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <div className="text-center text-white">
+                            <h2 className="text-4xl font-Dancing font-bold">Kontakt</h2>
+                            <div className="mt-4 border-t border-yellow-200"></div>
+                        </div>
                     </div>
                 </div>
-                {/* Contact Form */}
-                <div>
-                    <h2 className="text-xl font-semibold mb-4">Send us a Message</h2>
-                    <form>
-                        <div className="mb-4">
-                            <input type="text" placeholder="Your Name" className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none" />
-                        </div>
-                        <div className="mb-4">
-                            <input type="email" placeholder="Your Email" className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none" />
-                        </div>
-                        <div className="mb-4">
-                            <textarea rows="4" placeholder="Your Message" className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none"></textarea>
-                        </div>
-                        <button type="submit" className="bg-[#D4A745] text-white px-6 py-3 rounded hover:bg-[#c59e49e5] transition-colors">Send Message</button>
-                    </form>
+                <div className="flex flex-col lg:flex-row lg:space-x-8 p-8 w-3/5 mx-auto mt-36">
+                    <div className="bg-yellow-50 p-8 lg:w-1/3">
+                        <h3 className="text-2xl font-semibold text-[#D4A745]">Kontakt Informationen</h3>
+                        <ul className="mt-4 space-y-4">
+                            <li className="flex items-center text-gray-700">
+                                <svg className="w-6 h-6 text-[#D4A745] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a4 4 0 004.22 0L21 8M21 12v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6m16 0l-7.89 5.26a4 4 0 01-4.22 0L3 12"></path>
+                                </svg>
+                                Telefon: +1 203-123-0545606
+                            </li>
+                            <li className="flex items-center text-gray-700">
+                                <svg className="w-6 h-6 text-[#D4A745] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 21v-2a4 4 0 014-4h10a4 4 0 014 4v2M21 8a4 4 0 10-8 0 4 4 0 008 0zM3 8a4 4 0 118 0 4 4 0 01-8 0z"></path>
+                                </svg>
+                                Adresse: 515 West Ave Norwalk, CT 06850
+                            </li>
+                            <li className="flex items-center text-gray-700">
+                                <svg className="w-6 h-6 text-[#D4A745] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12H8m4-4v8m6-4H4"></path>
+                                </svg>
+                                E-Mail: info@demo.com
+                            </li>
+                            <li className="flex items-center text-gray-700">
+                                <svg className="w-6 h-6 text-[#D4A745] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12v2a2 2 0 002 2h4a2 2 0 002-2v-2M8 12V8a4 4 0 018 0v4m-8 0H7m1 0H5m1 0h8"></path>
+                                </svg>
+                                Mo-Fr: 08.00 - 19.00
+                                <br />
+                                Sonntag: Geschlossen
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="bg-white p-8 lg:w-2/3">
+                        <h3 className="text-2xl font-semibold text-[#D4A745]">Kontaktformular</h3>
+                        <form className="mt-6 space-y-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label htmlFor="full-name" className="sr-only">
+                                        Vollständiger Name
+                                    </label>
+                                    <input
+                                        id="full-name"
+                                        name="full-name"
+                                        type="text"
+                                        required
+                                        className="appearance-none h-16 relative block w-full px-4 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 text-lg focus:outline-none focus:ring-[#D4A745] focus:border-[#D4A745] sm:text-sm"
+                                        placeholder="Vollständiger Name"
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="sr-only">
+                                        E-Mail
+                                    </label>
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        required
+                                        className="appearance-none h-16 relative block w-full px-4 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 text-lg focus:outline-none focus:ring-[#D4A745] focus:border-[#D4A745] sm:text-sm"
+                                        placeholder="E-Mail"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="message" className="sr-only">
+                                    Nachricht
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    required
+                                    className="appearance-none h-40 relative block w-full px-4 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 text-lg focus:outline-none focus:ring-[#D4A745] focus:border-[#D4A745] sm:text-sm"
+                                    placeholder="Nachricht"
+                                ></textarea>
+                            </div>
+                            <div>
+                                <button
+                                    type="submit"
+                                    className="group relative w-1/4 flex justify-center py-4 px-4 border border-transparent text-sm font-medium text-white bg-[#D4A745] hover:bg-[#b89334] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4A745]"
+                                >
+                                    Nachricht Senden
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            {/* Social Media Links */}
-            <div className="mt-8">
-                <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
-                <div className="flex space-x-4">
-                    <a href="#" className="text-gray-700 hover:text-blue-500 transition-colors"><FaInstagram className="text-2xl" /></a>
-                    <a href="#" className="text-gray-700 hover:text-blue-500 transition-colors"><FaFacebook className="text-2xl" /></a>
-                </div>
-            </div>
-        </div>
+        </>
     );
 }
 

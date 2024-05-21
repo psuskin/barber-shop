@@ -2,41 +2,37 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from "./team.module.css"
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const teamMembers = [
   {
     picture: "/Images/team.jpg",
-    fullName: "Karim Ahmedd",
-    designation: "Master Barber / Founder",
-    bio: "With a passion for barbering and a keen eye for detail, Karim is the driving force behind our shop. As a master barber, he specializes in classic cuts and modern styles, ensuring every client leaves feeling confident and refreshed. Trust Karim for a haircut that exceeds your expectations.",
+    fullName: "Karim Ahmed",
+    designation: "Master Friseur / Gründer",
+    bio: "Mit einer Leidenschaft für das Friseurhandwerk und einem scharfen Auge für Details ist Karim die treibende Kraft hinter unserem Salon. Als Master Friseur spezialisiert er sich auf klassische Schnitte und moderne Styles, sodass jeder Kunde den Salon selbstbewusst und erfrischt verlässt. Vertrauen Sie Karim für einen Haarschnitt, der Ihre Erwartungen übertrifft.",
   },
   {
     picture: "/Images/barber2.jpg",
-    fullName: "Noha Ray",
-    designation: "Barber / Business Manager",
-    bio: "As both a skilled barber and our business manager, Noha brings a unique blend of talent and leadership to our shop. With her expertise in both cutting hair and running a successful business, she ensures that every client receives top-notch service and leaves looking their best.",
+    fullName: "Noah Schmidt",
+    designation: "Friseur / Geschäftsleiter",
+    bio: "Noah bringt als talentierter Friseur und Geschäftsleiter eine einzigartige Kombination aus Können und Führung in unseren Salon. Mit ihrer Expertise im Haarschnitt und der erfolgreichen Führung eines Unternehmens stellt sie sicher, dass jeder Kunde erstklassigen Service erhält und den Salon in Bestform verlässt.",
   },
   {
     picture: "/Images/barber3.jpg",
-    fullName: "Rahim",
-    designation: "Barber / Style Specialist",
-    bio: "Rahim is not just a barber; he's a style specialist dedicated to helping clients achieve their desired look. Whether it's a classic gentleman's cut or a trendy fade, Rahim's attention to detail and commitment to excellence ensure that every haircut is tailored to perfection.",
+    fullName: "Rahim Müller",
+    designation: "Friseur / Style Spezialist",
+    bio: "Rahim ist nicht nur ein Friseur; er ist ein Style Spezialist, der sich dafür einsetzt, dass die Kunden ihren gewünschten Look erreichen. Ob klassischer Herrenschnitt oder trendiger Fade, Rahims Liebe zum Detail und sein Streben nach Perfektion sorgen dafür, dass jeder Haarschnitt perfekt angepasst ist.",
   },
   {
     picture: "/Images/barber.jpg",
-    fullName: "Kalam Khan",
-    designation: "Barber / Marketing Director",
-    bio: "Kalam Khan is more than just a barber; he's the creative mind behind our shop's marketing efforts. With his innovative approach and passion for barbering, he ensures that our shop is the go-to destination for quality cuts and exceptional service. Experience the Kalam Khan difference today.",
+    fullName: "Klaus Meyer",
+    designation: "Friseur / Marketing Direktor",
+    bio: "Klaus Meyer ist mehr als nur ein Friseur; er ist der kreative Kopf hinter den Marketingaktivitäten unseres Salons. Mit seinem innovativen Ansatz und seiner Leidenschaft fürs Friseurhandwerk stellt er sicher, dass unser Salon die erste Anlaufstelle für qualitativ hochwertige Schnitte und außergewöhnlichen Service ist. Erleben Sie heute den Unterschied von Klaus Meyer.",
   },
 ];
 
 
-
 const Team = () => {
 
-  // gsap.registerPlugin(ScrollTrigger);
 
   const [index, setIndex] = useState(0);
   const { picture, fullName, designation, bio } =
@@ -58,26 +54,7 @@ const Team = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // const triggerRef = useRef(null);
-  // const titleRef = useRef(null);
-  // const descriptionRef = useRef(null);
 
-  // useEffect(() => {
-  //   gsap.fromTo(
-  //     [titleRef.current, descriptionRef.current],
-  //     { opacity: 0 },
-  //     {
-  //       opacity: 1,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: triggerRef.current,
-  //         start: 'top 60%',
-  //         end: 'bottom 90%',
-  //         scrub: 1
-  //       },
-  //     }
-  //   );
-  // }, [])
 
   return (
     <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-10 mb-10">

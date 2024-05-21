@@ -14,33 +14,34 @@ const reviewList = [
         author: {
             fullName: "Ankita Nath",
             picture: "/Images/review2.jpg",
-            designation: "Founder / CEO",
+            designation: "Gründerin / CEO",
         },
         rating: 3.5,
         description:
-            "I had a fantastic experience at your barbershop. The staff was friendly and professional, and I received an excellent haircut that perfectly suited my style. I highly recommend your services to anyone looking for a top-notch barber.",
+            "Ich hatte eine fantastische Erfahrung im Hannis Friseursalon. Das Personal war freundlich und professionell, und ich habe einen ausgezeichneten Haarschnitt bekommen, der perfekt zu meinem Stil passt. Ich empfehle Ihre Dienste jedem, der einen erstklassigen Friseur sucht.",
     },
     {
         author: {
             fullName: "Raima Sen",
             picture: "/Images/review3.jpg",
-            designation: "Founder / CEO",
+            designation: "Gründerin / CEO",
         },
         rating: 4,
         description:
-            "I've been a regular customer at your barbershop for years, and I'm always impressed with the quality of service I receive. The barbers are skilled and attentive, and I always leave feeling confident and refreshed. Keep up the great work!",
+            "Ich bin seit Jahren Stammkunde im Hannis Friseursalon und bin immer beeindruckt von der Qualität des Services, den ich erhalte. Die Friseure sind geschickt und aufmerksam, und ich verlasse den Salon immer mit einem selbstbewussten und erfrischten Gefühl. Weiter so!",
     },
     {
         author: {
             fullName: "Rashid Sheikh",
             picture: "/Images/review4.jpg",
-            designation: "Founder / CEO",
+            designation: "Gründer / CEO",
         },
         rating: 5,
         description:
-            "I recently visited your barbershop for the first time, and I couldn't be happier with the results. The barber listened to my preferences and delivered exactly what I was looking for. I'll definitely be returning and recommending your shop to others.",
+            "Ich habe kürzlich den Hannis Friseursalon zum ersten Mal besucht und könnte nicht zufriedener mit dem Ergebnis sein. Der Friseur hat meine Vorlieben berücksichtigt und genau das geliefert, was ich wollte. Ich werde definitiv wiederkommen und Ihren Salon weiterempfehlen.",
     },
 ];
+
 
 const Rating = ({ rating, showLabel, className, ...rest }) => {
     const renderStars = () => {
@@ -101,7 +102,7 @@ const Review = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex((prevIndex) => (prevIndex >= reviewList.length - 1 ? 0 : prevIndex + 1));
-        }, 4500); 
+        }, 4500);
 
         return () => clearInterval(intervalId);
     }, []);

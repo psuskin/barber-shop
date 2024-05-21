@@ -1,16 +1,13 @@
-"use client"
-import React, { useEffect, useRef, useState } from 'react';
-import styles from "./heroSection.module.css"
-import { motion } from 'framer-motion';
-import Lenis from '@studio-freight/lenis';
-import Image from 'next/image';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import styles from "./heroSection.module.css";
+import Lenis from "@studio-freight/lenis";
+
 const HeroSection = () => {
     const videoRef = useRef(null);
     const containerRef = useRef();
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
-
-
 
     const togglePlayPause = () => {
         if (videoRef.current.paused) {
@@ -29,17 +26,16 @@ const HeroSection = () => {
     };
 
     useEffect(() => {
-        const lenis = new Lenis()
+        const lenis = new Lenis();
         const raf = (time) => {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-        requestAnimationFrame(raf)
-    }, [])
-
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+    }, []);
 
     return (
-        <div className={styles.container} >
+        <div className={styles.container}>
             <div className={styles.videoContainer} ref={containerRef}>
                 <video
                     ref={videoRef}
@@ -47,27 +43,44 @@ const HeroSection = () => {
                     autoPlay
                     loop
                     muted
+                    preload="metadata"
+                    poster="/Images/poster.jpg"
                 >
+                    <source src="/Video/barberShop1.webm" type="video/webm" />
                     <source src="/Video/barberShop1.mp4" type="video/mp4" />
                 </video>
                 <h1 className={styles.welcomeTitle}>Willkommen im Hannis Friseursalon</h1>
                 <h1 className={styles.title}>Exzellenz in Schönheit</h1>
-                {/* <Image className='absolute bottom-56' src="/Images/logo.png" width={200} height={200} alt='logo' /> */}
-
-
             </div>
             <div className={styles.blur}></div>
-            <button
-                onClick={toggleMuteUnmute}
-                className={styles.muteBtn}
-            >
+            <button onClick={toggleMuteUnmute} className={styles.muteBtn}>
                 {isMuted ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#ffffff"
+                        stroke="#ffffff"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
                         <rect x="3" y="9" width="7" height="6" rx="1"></rect>
                         <path d="M14 9l6 6m0-6l-6 6"></path>
                     </svg>
                 ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#ffffff"
+                        stroke="#ffffff"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
                         <rect x="3" y="9" width="7" height="6" rx="1"></rect>
                         <path d="M14 9v6"></path>
                         <path d="M17 9.5v5"></path>
@@ -76,10 +89,7 @@ const HeroSection = () => {
                 )}
             </button>
 
-            <button
-                onClick={togglePlayPause}
-                className={styles.playPauseBtn}
-            >
+            <button onClick={togglePlayPause} className={styles.playPauseBtn}>
                 {isPlaying ? (
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

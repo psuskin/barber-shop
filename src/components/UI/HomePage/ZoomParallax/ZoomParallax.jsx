@@ -62,7 +62,7 @@ const ZoomParallax = () => {
 
     return (
         <div ref={container} className={styles.container}>
-            <div className="container mx-auto flex flex-col justify-center w-full items-start z-10 mt-16 lg:-mt-16 px-4 ">
+            <div className="container mx-auto flex flex-col justify-center items-start z-10 mt-16 lg:-mt-16 px-4 ">
                 <h3 ref={titleRef} className="text-xl lg:text-[2rem] font-bold text-[#D4A745] font-Dancing">Unsere Arbeiten</h3>
                 <h1 ref={descriptionRef} className="text-2xl lg:text-[2rem] font-semibold tracking-wide leading-tight">Entdecken Sie unsere kreativen Werke und inspirierenden Projekte</h1>
             </div>

@@ -22,8 +22,6 @@ const FollowUsSection = () => {
 
     return (
         <section className="py-12 bg-gray-100 h-[90vh]">
-
-
             <div className='relative' ref={containerRef}>
                 <div className='bg-red-200 absolute h-60 lg:h-80 w-full sm:w-2/4 mx-auto top-0 lg:-top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                     <div className='relative w-full h-full'>

@@ -43,19 +43,13 @@ const Service = () => {
     return (
         <div className="bg-black">
             <div className="flex h-4 pt-10 lg:h-48 items-center justify-center gap-4">
-                <span className="font-semibold uppercase text-neutral-500">
-                    Scroll
-                </span>
-                <FaArrowDownLong className="text-xl font-thin text-[#D4A745] opacity-60" />
+                <FaArrowDownLong className="mx-auto text-xl mb-2 animate-bounce text-[#D4A745]" />
             </div>
             <div className="container mx-auto flex flex-col justify-center w-full items-start z-10 mt-16 lg:-mt-16 px-4" ref={triggerRef}>
-
                 <h3 className="text-xl lg:text-[1.5rem] font-bold text-[#D4A745]" ref={titleRef}>{sectionTitle}</h3>
                 <h1 className="text-2xl lg:text-[2rem] font-semibold text-white" ref={descriptionRef}>{sectionDescription}</h1>
             </div>
             <HorizontalScrollCarousel />
-
-
         </div>
     );
 };
@@ -79,10 +73,15 @@ const HorizontalScrollCarousel = () => {
                         return <Card card={card} key={card.id} />;
                     })}
                 </motion.div>
-                <div className="serviceContainer bg-[#F2F5EE] text-gray-700 flex justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 h-1/4 w-full lg:w-2/4 items-center p-4 md:p-10 container mx-auto">
-                    <div className="flex-1 flex-shrink text-lg font-bold uppercase">Gönnen Sie sich unser Angebot an Schönheitsbehandlungen</div>
-                    <div className="flex-1 text-sm font-medium uppercase  text-justify">Tauchen Sie ein in eine Welt der Schönheit und Entspannung mit unseren vielfältigen Dienstleistungen, darunter Haarverwandlungen, Spa-Therapien und verjüngende Hautpflegebehandlungen</div>
+                <div className="serviceContainer bg-[#F2F5EE] text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
+                    <div className="flex-1 flex-shrink text-base md:text-lg lg:text-xl font-bold uppercase text-center lg:text-left">
+                        Gönnen Sie sich unser Angebot an Schönheitsbehandlungen
+                    </div>
+                    <div className="flex-1 text-sm md:text-base lg:text-lg font-medium uppercase text-justify mt-4 lg:mt-0">
+                        Tauchen Sie ein in eine Welt der Schönheit und Entspannung mit unseren vielfältigen Dienstleistungen, darunter Haarverwandlungen, Spa-Therapien und verjüngende Hautpflegebehandlungen
+                    </div>
                 </div>
+
             </div>
         </section>
     );
@@ -101,10 +100,11 @@ const Card = ({ card }) => {
                 objectFit="cover"
                 className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="absolute inset-0 z-10 grid place-content-start">
-                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-3xl">
+            <div className="absolute inset-0 z-10 grid place-content-center">
+                <p className="bg-gradient-to-br from-white/20 to-white/0 p-4 md:p-6 lg:p-8 text-2xl md:text-4xl lg:text-6xl font-black uppercase text-white backdrop-blur-3xl">
                     {card.title}
                 </p>
+
             </div>
         </div>
     );
