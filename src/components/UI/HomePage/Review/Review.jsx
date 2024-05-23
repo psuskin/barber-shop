@@ -4,11 +4,7 @@ import { FaChevronLeft, FaChevronRight, FaStar, FaStarHalfAlt } from "react-icon
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
-// gsap.registerPlugin(ScrollTrigger);
 const reviewList = [
     {
         author: {
@@ -91,9 +87,7 @@ const Review = () => {
         }
     };
 
-    // const triggerRef = useRef(null);
-    // const titleRef = useRef(null);
-    // const descriptionRef = useRef(null);
+
     const imageRef = useRef();
     const { scrollYProgress } = useScroll({ target: imageRef });
     const y = useTransform(scrollYProgress, [0, 1], [-40, 10]);
@@ -107,25 +101,6 @@ const Review = () => {
         return () => clearInterval(intervalId);
     }, []);
 
-    // useEffect(() => {
-    //     gsap.fromTo(
-    //         [titleRef.current, descriptionRef.current],
-    //         { opacity: 0, y: 100 },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration: 1,
-    //             stagger: 0.5,
-    //             ease: 'power2.out',
-    //             scrollTrigger: {
-    //                 trigger: triggerRef.current,
-    //                 start: 'top 50%',
-    //                 end: 'bottom 60%',
-    //                 scrub: 1
-    //             },
-    //         }
-    //     );
-    // }, []);
     return (
         <section className="light relative mb-60 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1] ">
             <div className="my-4 mb-10 lg:mb-20 container mx-auto px-2">

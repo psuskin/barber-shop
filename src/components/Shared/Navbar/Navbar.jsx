@@ -1,22 +1,20 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
-import styles from "./style.module.css"
 import { FaCaretDown } from "react-icons/fa";
-
+import styles from "./style.module.css";
 
 const Navbar = () => {
-
   const [open, setOpen] = useState(false);
+  const [hoverService, setHoverService] = useState(false);
+  const [show, setShow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenus = () => {
     setOpen((prevOpen) => !prevOpen);
   };
-  const [hoverService, setHoverService] = useState(false);
-  const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -26,92 +24,43 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-
   const navLinks = [
     { title: "Home", href: "/" },
-    { title: "Über uns ", href: "/about" },
+    { title: "Über uns", href: "/about" },
     { title: "Kontakt", href: "/contact" },
   ];
 
-  // Dropdown menu options
   const serviceOptions = [
     "Haarwelt",
     "Hair SPA",
     "Med. Fusspflege",
     "Kosmetik",
-    "Ästhetische Behandlung"
+    "Ästhetische Behandlung",
   ];
 
   const menuVars = {
-    initial: {
-      scaleY: 0,
-    },
-    animate: {
-      scaleY: 1,
-      transition: {
-        duration: 0.5,
-        ease: [0.12, 0, 0.39, 0],
-      },
-    },
-    exit: {
-      scaleY: 0,
-      transition: {
-        delay: 0.5,
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
+    initial: { scaleY: 0 },
+    animate: { scaleY: 1, transition: { duration: 0.5, ease: [0.12, 0, 0.39, 0] } },
+    exit: { scaleY: 0, transition: { delay: 0.5, duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
   };
 
   const containerVars = {
-    initial: {
-      transition: {
-        staggerChildren: 0.09,
-        staggerDirection: -1,
-      },
-    },
-    open: {
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.09,
-        staggerDirection: 1,
-      },
-    },
+    initial: { transition: { staggerChildren: 0.09, staggerDirection: -1 } },
+    open: { transition: { delayChildren: 0.3, staggerChildren: 0.09, staggerDirection: 1 } },
   };
 
   const mobileLinkVars = {
-    initial: {
-      y: "30vh",
-      transition: {
-        duration: 0.5,
-        ease: [0.37, 0, 0.63, 1],
-      },
-    },
-    open: {
-      y: 0,
-      transition: {
-        ease: [0, 0.55, 0.45, 1],
-        duration: 0.7,
-      },
-    },
+    initial: { y: "30vh", transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] } },
+    open: { y: 0, transition: { ease: [0, 0.55, 0.45, 1], duration: 0.7 } },
   };
 
   const MobileNavLink = ({ title, href }) => {
     return (
-      <motion.div
-        variants={mobileLinkVars}
-        className="text-5xl uppercase text-black"
-      >
-        <Link
-          href={href}
-          smooth={true}
-          duration={800}
-          onClick={toggleMenus}
-        >
+      <motion.div variants={mobileLinkVars} className="text-5xl uppercase text-black">
+        <Link href={href} onClick={toggleMenus}>
           {title}
         </Link>
       </motion.div>
@@ -124,35 +73,35 @@ const Navbar = () => {
         <div className="container mx-auto bg-transparent">
           <div className="flex justify-between items-center mx-auto w-full py-6 backdrop-blur-md rounded-b-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
             <div>
-              <Link href="/" className="flex items-center gap-1 font-bold text-gray-100 cursor-pointer pl-8" spy={true} smooth={true} duration={800}>
+              <Link href="/" className="flex items-center gap-1 font-bold text-gray-100 cursor-pointer pl-8">
                 <h1 className="uppercase text-xl">Hannis Friseursalon</h1>
               </Link>
             </div>
-            {/* Primary menu */}
             <div className={`${styles.content__item} hidden lg:flex gap-8 text-lg pr-8`}>
               {navLinks.map((link, index) => (
-                <Link key={index} href={link.href} smooth={true} duration={800} className={`${styles.linkMneme} ${styles.link}`}>
+                <Link key={index} href={link.href} className={`${styles.linkMneme} ${styles.link}`}>
                   {link.title}
                 </Link>
               ))}
-              {/* Dropdown for Service section */}
               <div onMouseEnter={() => setHoverService(true)} onMouseLeave={() => setHoverService(false)} className="relative">
-                <p className="cursor-pointer uppercase flex gap-2 items-center justify-between">
-                  Dienstleistung <FaCaretDown />
-                  {hoverService && (
-                    <motion.div variants={menuVars} initial="initial" animate="animate" exit="exit" className="absolute left-0 top-full text-nowrap rounded-md shadow-lg normal-case p-2 backdrop-blur-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                      {serviceOptions.map((option, index) => (
-                        <p key={index} className={`${styles.linkMneme} ${styles.link} cursor-pointer p-1`}>
+                <Link href="/services">
+                  <p className="cursor-pointer uppercase flex gap-2 items-center">
+                    Dienstleistung <FaCaretDown />
+                  </p>
+                </Link>
+                {hoverService && (
+                  <motion.div variants={menuVars} initial="initial" animate="animate" exit="exit" className="absolute left-0 top-full text-nowrap rounded-md shadow-lg p-2 backdrop-blur-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                    {serviceOptions.map((option, index) => (
+                      <Link key={index} href="/services">
+                        <p className={`${styles.linkMneme} ${styles.link} cursor-pointer p-1`}>
                           {option}
                         </p>
-                      ))}
-                    </motion.div>
-                  )}
-                </p>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
               </div>
             </div>
-
-            {/* Secondary menu */}
             <div className="flex items-center lg:hidden pr-8">
               {open ? (
                 <button className="text-gray-100 focus:outline-none" onClick={toggleMenus}>
@@ -184,11 +133,15 @@ const Navbar = () => {
                   </div>
                 ))}
                 <div className="mt-8">
-                  <p className="text-3xl text-black uppercase">Dienstleistung</p>
+                  <Link href="/services" onClick={toggleMenus}>
+                    <p className="text-5xl text-black uppercase">Dienstleistung</p>
+                  </Link>
                   <div className="flex flex-col items-center mt-4">
                     {serviceOptions.map((option, index) => (
                       <motion.div key={index} variants={mobileLinkVars} className="text-2xl text-black">
-                        {option}
+                        <Link href="/services" onClick={toggleMenus}>
+                          {option}
+                        </Link>
                       </motion.div>
                     ))}
                   </div>

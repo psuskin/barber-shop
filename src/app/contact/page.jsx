@@ -20,7 +20,7 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row lg:space-x-8 p-8 w-3/5 mx-auto mt-36">
+                <div className="flex flex-col lg:flex-row lg:space-x-8 lg:p-8 p-4 container lg:w-3/5 mx-auto mt-36">
                     <div className="bg-yellow-50 p-8 lg:w-1/3">
                         <h3 className="text-2xl font-semibold text-[#D4A745]">Kontakt Informationen</h3>
                         <ul className="mt-4 space-y-4">
@@ -52,7 +52,7 @@ const ContactPage = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="bg-white p-8 lg:w-2/3">
+                    <div className="bg-white lg:p-8 lg:w-2/3 w-full">
                         <h3 className="text-2xl font-semibold text-[#D4A745]">Kontaktformular</h3>
                         <form className="mt-6 space-y-10">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -92,14 +92,14 @@ const ContactPage = () => {
                                     name="message"
                                     rows="4"
                                     required
-                                    className="appearance-none h-40 relative block w-full px-4 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 text-lg focus:outline-none focus:ring-[#D4A745] focus:border-[#D4A745] sm:text-sm"
+                                    className="appearance-none h-full lg:h-40 relative block w-full px-4 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 text-lg focus:outline-none focus:ring-[#D4A745] focus:border-[#D4A745] sm:text-sm"
                                     placeholder="Nachricht"
                                 ></textarea>
                             </div>
                             <div>
                                 <button
                                     type="submit"
-                                    className="group relative w-1/4 flex justify-center py-4 px-4 border border-transparent text-sm font-medium text-white bg-[#D4A745] hover:bg-[#b89334] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4A745]"
+                                    className="group relative lg:w-1/4 flex justify-center py-4 px-4 border border-transparent text-sm font-medium text-white bg-[#D4A745] hover:bg-[#b89334] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4A745]"
                                 >
                                     Nachricht Senden
                                 </button>

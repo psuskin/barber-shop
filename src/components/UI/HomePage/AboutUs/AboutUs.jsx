@@ -28,8 +28,8 @@ const AboutUs = () => {
                             <ImageReveal
                                 src="/Images/about.jpg"
                                 alt="Image About"
-                                width={500}
-                                height={500}
+                                width={600}
+                                height={700}
                             />
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const AboutUs = () => {
             </div>
 
             <Link href="/about"
-                className="overflow-hidden bg-gradient-to-r bg-[#D4A745] text-white font-semibold py-2 px-4 rounded-full transform transition-transform duration-300 absolute bottom-20 right-4 lg:bottom-60 lg:right-48 mr-4 mt-4"
+                className="overflow-hidden bg-gradient-to-r bg-[#D4A745] text-white font-semibold py-2 px-6 transform transition-transform duration-300 absolute bottom-20 right-4 lg:bottom-60 lg:right-48 mr-4 mt-4"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >

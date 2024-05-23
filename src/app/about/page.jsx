@@ -48,8 +48,8 @@ const StoryItem = ({ item, index }) => {
                     <ImageReveal
                         src={image}
                         alt="About Us"
-                        width={500}
-                        height={600}
+                        width={400}
+                        height={500}
                     />
                 </div>
             </div>

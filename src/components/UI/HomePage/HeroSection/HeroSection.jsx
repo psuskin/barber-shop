@@ -32,6 +32,7 @@ const HeroSection = () => {
             requestAnimationFrame(raf);
         };
         requestAnimationFrame(raf);
+
     }, []);
 
     return (
