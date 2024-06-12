@@ -1,0 +1,27 @@
+.customRounded {
+    border-radius: 20% / 10%;
+}
+
+.customRoundedLg {
+    border-radius: 20% / 15%;
+}
+
+.customRoundedFull {
+    border-radius: 50%;
+}
+
+.customRoundedTopLeft {
+    border-radius: 50% 0 0 50%;
+}
+
+.customRoundedTopRight {
+    border-radius: 0 50% 50% 0;
+}
+
+.customRoundedBottomLeft {
+    border-radius: 0 0 50% 50%;
+}
+
+.customRoundedBottomRight {
+    border-radius: 50% 50% 0 0;
+}

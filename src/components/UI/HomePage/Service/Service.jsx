@@ -101,7 +101,7 @@ const Card = ({ card }) => {
                 className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 z-10 grid place-content-center">
-                <p className="bg-gradient-to-br from-white/20 to-white/0 p-4 md:p-6 lg:p-8 text-2xl md:text-4xl lg:text-6xl font-black uppercase text-white backdrop-blur-3xl">
+                <p className="bg-gradient-to-br from-black/40 to-white/0 p-4 md:p-6 lg:p-8 text-2xl md:text-4xl lg:text-6xl font-black uppercase text-white">
                     {card.title}
                 </p>
 
@@ -114,29 +114,29 @@ export default Service;
 
 const cards = [
     {
-        url: "/Images/work7.jpg",
+        url: "/Images/haarwelt.jpg",
         title: "Haarwelt",
         description: "Professional haircuts for men, women, and children.",
         id: 1,
     },
     {
-        url: "/Images/hairSpa.jpg",
+        url: "/Images/hair-spa.jpg",
         title: "Hair SPA",
         description: "Expert beard trimming and grooming services.",
         id: 2,
     },
     {
-        url: "/Images/feet.jpg",
+        url: "/Images/fusspflege1.jpg",
         title: "Med. Fusspflege",
         id: 3,
     },
     {
-        url: "/Images/makeup.jpg",
+        url: "/Images/kosmetik.jpg",
         title: "Kosmetik",
         id: 4,
     },
     {
-        url: "/Images/treatment.jpg",
+        url: "/Images/asthetische.jpg",
         title: "Ästhetische Behandlung",
         id: 5,
     }

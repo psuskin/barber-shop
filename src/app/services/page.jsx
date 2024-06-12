@@ -9,27 +9,27 @@ import React, { useEffect, useRef } from 'react';
 
 const services = [
     {
-        image: "/Images/treatment.jpg",
+        image: "/Images/haarwelt2.jpg",
         title: "Haarwelt",
         description: "Professionelle Haarschnitte für Männer, Frauen und Kinder.",
     },
     {
-        image: "/Images/hairSpa.jpg",
+        image: "/Images/hair-spa.jpg",
         title: "Hair SPA",
         description: "Entspannende Haarspa-Behandlungen für gesundes Haar.",
     },
     {
-        image: "/Images/feet.jpg",
+        image: "/Images/fusspflege2.jpg",
         title: "Med. Fusspflege",
         description: "Medizinische Fußpflege und Pediküre.",
     },
     {
-        image: "/Images/makeup.jpg",
+        image: "/Images/kosmetik.jpg",
         title: "Kosmetik",
         description: "Professionelle Make-up-Dienstleistungen für alle Anlässe.",
     },
     {
-        image: "/Images/treatment.jpg",
+        image: "/Images/asthetische.jpg",
         title: "Ästhetische Behandlung",
         description: "Ästhetische Behandlungen zur Verjüngung.",
     },
@@ -39,7 +39,7 @@ const ServicePage = () => {
 
     const imageRef = useRef();
     const { scrollYProgress } = useScroll({ target: imageRef });
-    const y = useTransform(scrollYProgress, [0, 1], [-80, 50]);
+    const y = useTransform(scrollYProgress, [0, 1], [-40, 30]);
 
 
     useEffect(() => {
@@ -81,24 +81,24 @@ const ServicePage = () => {
                 </div>
 
                 <div className="relative flex items-center">
-                    <div className="relative w-72 h-96 md:w-80 md:h-[500px] lg:w-[400px] lg:h-[600px]">
+                    <div className="relative w-72 h-96 md:w-64 md:h-[500px] lg:w-[400px] lg:h-[600px]">
                         <ImageReveal
-                            src="/Images/img-big.jpg"
+                            src="/Images/service2.jpg"
                             alt="Image 1"
                             width={400}
                             height={600}
                         />
                     </div>
-                    <motion.div className="absolute top-60 -left-8 md:-left-16 w-40 h-40 md:w-64 md:h-64" style={{ y }}>
+                    <motion.div className="absolute bottom-4 -left-8 md:-left-28 w-40 h-40 md:w-80 md:h-72" style={{ y }}>
                         <Image
                             ref={imageRef}
-                            src="/Images/follow1.jpg"
+                            src="/Images/haarwelt2.jpg"
                             alt="Image 2"
                             layout="responsive"
                             width={200}
                             height={200}
                             objectFit="cover"
-                            className="rounded-lg shadow-lg hidden md:block"
+                            className="rounded-lg hidden md:block"
                         />
                     </motion.div>
                 </div>
