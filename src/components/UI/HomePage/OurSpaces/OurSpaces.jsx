@@ -15,7 +15,7 @@ const OurSpaces = () => {
                         <div className="flex flex-1 flex-col gap-2">
                             <div className="flex flex-1 flex-col relative group">
                                 <div className="relative w-full h-full">
-                                    <Image src="/Images/room.jpg" alt="Raum 1" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                    <Image src="/Images/room1.jpg" alt="Raum 1" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                 </div>
                                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                     <h3 className="text-lg font-bold">Entspannungsraum</h3>
@@ -25,7 +25,7 @@ const OurSpaces = () => {
                             <div className="flex flex-1 flex-row gap-2">
                                 <div className="flex flex-1 flex-col relative group">
                                     <div className="relative w-full h-full">
-                                        <Image src="/Images/room1.jpg" alt="Raum 2" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                        <Image src="/Images/room2.jpg" alt="Raum 2" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                         <h3 className="text-lg font-bold">Kosmetikraum</h3>
@@ -34,7 +34,7 @@ const OurSpaces = () => {
                                 </div>
                                 <div className="flex flex-1 flex-col relative group">
                                     <div className="relative w-full h-full">
-                                        <Image src="/Images/room2.jpg" alt="Raum 3" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                        <Image src="/Images/room3.jpg" alt="Raum 3" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                         <h3 className="text-lg font-bold">Maniküreraum</h3>
@@ -47,7 +47,7 @@ const OurSpaces = () => {
                             <div className="flex flex-1 flex-row gap-2">
                                 <div className="flex flex-1 flex-col relative group">
                                     <div className="relative w-full h-full">
-                                        <Image src="/Images/room3.jpg" alt="Raum 4" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                        <Image src="/Images/room4.jpg" alt="Raum 4" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                         <h3 className="text-lg font-bold">Friseursalon</h3>
@@ -56,7 +56,7 @@ const OurSpaces = () => {
                                 </div>
                                 <div className="flex flex-1 flex-col relative group">
                                     <div className="relative w-full h-full">
-                                        <Image src="/Images/room.jpg" alt="Raum 5" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                        <Image src="/Images/room5.jpg" alt="Raum 5" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                         <h3 className="text-lg font-bold">Spa-Bereich</h3>
@@ -66,7 +66,7 @@ const OurSpaces = () => {
                             </div>
                             <div className="flex flex-1 flex-col relative group">
                                 <div className="relative w-full h-full">
-                                    <Image src="/Images/room1.jpg" alt="Raum 6" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
+                                    <Image src="/Images/room.jpg" alt="Raum 6" width={800} height={600} className="object-cover w-full h-full group-hover:blur-sm transition duration-300" />
                                 </div>
                                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-15 text-white p-2 z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                                     <h3 className="text-lg font-bold">Make-up Studio</h3>

@@ -11,13 +11,13 @@ const stories = [
         title: "Die Reise zu Schönheit und Entspannung",
         description:
             "In unserem Schönheitssalon glauben wir an die transformative Kraft von Entspannung und Selbstpflege. Unsere Reise begann mit einer Leidenschaft für Schönheit und dem Engagement, unseren Kunden eine Oase der Ruhe zu bieten. Durch jahrelange Hingabe haben wir eine Umgebung geschaffen, in der die sanftesten Berührungen, die geschicktesten Hände und die hochwertigsten Produkte zusammenkommen, um ein unvergleichliches Erlebnis von Komfort und Erholung zu schaffen.",
-        image: "/Images/about.jpg"
+        image: "/Images/works1.jpg"
     },
     {
         title: "Ihr Weg zur Eleganz",
         description:
             "In unserem Salon bemühen wir uns, Ihre Schönheit und Ihr Wohlbefinden bei jedem Besuch zu steigern. Unser Team erfahrener Fachleute bietet individuelle Dienstleistungen, die auf Ihre einzigartigen Bedürfnisse zugeschnitten sind. Ob Sie eine revitalisierende Gesichtsbehandlung, eine entspannende Massage oder eine atemberaubende neue Frisur suchen, wir bieten eine ruhige und einladende Atmosphäre, in der Sie sich entspannen und verwöhnen lassen können. Unser Engagement für Exzellenz stellt sicher, dass jeder Moment, den Sie bei uns verbringen, ein Schritt in Richtung Ihres persönlichen Paradieses aus Eleganz und Gelassenheit ist.",
-        image: "/Images/aboutUs.jpg"
+        image: "/Images/aboutus1.jpg"
     }
 ];
 

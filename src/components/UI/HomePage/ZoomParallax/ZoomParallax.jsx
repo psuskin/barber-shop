@@ -3,13 +3,13 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from "./zoom.module.css"
 
-import Picture1 from '../../../../../public/Images/work1.jpg';
-import Picture2 from '../../../../../public/Images/work3.jpg';
-import Picture3 from '../../../../../public/Images/work2.jpg';
-import Picture4 from '../../../../../public/Images/work3.jpg'
-import Picture5 from '../../../../../public/Images/work4.jpg'
-import Picture6 from '../../../../../public/Images/work5.jpg'
-import Picture7 from '../../../../../public/Images/work6.jpg'
+import Picture1 from '../../../../../public/Images/haarwelt.jpg';
+import Picture2 from '../../../../../public/Images/asthetische.jpg';
+import Picture3 from '../../../../../public/Images/haircut1.jpg';
+import Picture4 from '../../../../../public/Images/works.jpg'
+import Picture5 from '../../../../../public/Images/haircut4.jpg'
+import Picture6 from '../../../../../public/Images/fusspflege1.jpg'
+import Picture7 from '../../../../../public/Images/service1.jpg'
 
 const ZoomParallax = () => {
 
@@ -75,7 +75,7 @@ const ZoomParallax = () => {
                                     src={src}
                                     fill
                                     alt="image"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
                                 />
                             </div>
                         </motion.div>

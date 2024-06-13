@@ -5,25 +5,25 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const teamMembers = [
   {
-    picture: "/Images/team.jpg",
+    picture: "/Images/haircut1.jpg",
     fullName: "Karim Ahmed",
     designation: "Master Friseur / Gründer",
     bio: "Mit einer Leidenschaft für das Friseurhandwerk und einem scharfen Auge für Details ist Karim die treibende Kraft hinter unserem Salon. Als Master Friseur spezialisiert er sich auf klassische Schnitte und moderne Styles, sodass jeder Kunde den Salon selbstbewusst und erfrischt verlässt. Vertrauen Sie Karim für einen Haarschnitt, der Ihre Erwartungen übertrifft.",
   },
+  // {
+  //   picture: "/Images/.jpg",
+  //   fullName: "Noah Schmidt",
+  //   designation: "Friseur / Geschäftsleiter",
+  //   bio: "Noah bringt als talentierter Friseur und Geschäftsleiter eine einzigartige Kombination aus Können und Führung in unseren Salon. Mit ihrer Expertise im Haarschnitt und der erfolgreichen Führung eines Unternehmens stellt sie sicher, dass jeder Kunde erstklassigen Service erhält und den Salon in Bestform verlässt.",
+  // },
   {
-    picture: "/Images/barber2.jpg",
-    fullName: "Noah Schmidt",
-    designation: "Friseur / Geschäftsleiter",
-    bio: "Noah bringt als talentierter Friseur und Geschäftsleiter eine einzigartige Kombination aus Können und Führung in unseren Salon. Mit ihrer Expertise im Haarschnitt und der erfolgreichen Führung eines Unternehmens stellt sie sicher, dass jeder Kunde erstklassigen Service erhält und den Salon in Bestform verlässt.",
-  },
-  {
-    picture: "/Images/barber3.jpg",
+    picture: "/Images/works.jpg",
     fullName: "Rahim Müller",
     designation: "Friseur / Style Spezialist",
     bio: "Rahim ist nicht nur ein Friseur; er ist ein Style Spezialist, der sich dafür einsetzt, dass die Kunden ihren gewünschten Look erreichen. Ob klassischer Herrenschnitt oder trendiger Fade, Rahims Liebe zum Detail und sein Streben nach Perfektion sorgen dafür, dass jeder Haarschnitt perfekt angepasst ist.",
   },
   {
-    picture: "/Images/barber.jpg",
+    picture: "/Images/haarwelt2.jpg",
     fullName: "Klaus Meyer",
     designation: "Friseur / Marketing Direktor",
     bio: "Klaus Meyer ist mehr als nur ein Friseur; er ist der kreative Kopf hinter den Marketingaktivitäten unseres Salons. Mit seinem innovativen Ansatz und seiner Leidenschaft fürs Friseurhandwerk stellt er sicher, dass unser Salon die erste Anlaufstelle für qualitativ hochwertige Schnitte und außergewöhnlichen Service ist. Erleben Sie heute den Unterschied von Klaus Meyer.",
@@ -73,6 +73,8 @@ const Team = () => {
                   fill
                   objectFit="cover"
                   className={styles.teamImage}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  loading='eager'
                 />
               </div>
             </div>

@@ -39,7 +39,7 @@ const ServicePage = () => {
 
     const imageRef = useRef();
     const { scrollYProgress } = useScroll({ target: imageRef });
-    const y = useTransform(scrollYProgress, [0, 1], [-40, 30]);
+    const y = useTransform(scrollYProgress, [0, 1], [-20, 20]);
 
 
     useEffect(() => {
@@ -92,13 +92,13 @@ const ServicePage = () => {
                     <motion.div className="absolute bottom-4 -left-8 md:-left-28 w-40 h-40 md:w-80 md:h-72" style={{ y }}>
                         <Image
                             ref={imageRef}
-                            src="/Images/haarwelt2.jpg"
+                            src="/Images/works.jpg"
                             alt="Image 2"
                             layout="responsive"
                             width={200}
                             height={200}
                             objectFit="cover"
-                            className="rounded-lg hidden md:block"
+                            className="rounded-lg shadow-xl hidden md:block"
                         />
                     </motion.div>
                 </div>

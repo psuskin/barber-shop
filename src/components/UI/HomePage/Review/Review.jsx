@@ -122,6 +122,8 @@ const Review = () => {
                                         fill
                                         objectFit="cover"
                                         className="rounded-3xl"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        loading="eager"
                                     />
                                 </motion.div>
                             </div>

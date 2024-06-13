@@ -73,11 +73,11 @@ const HorizontalScrollCarousel = () => {
                         return <Card card={card} key={card.id} />;
                     })}
                 </motion.div>
-                <div className="serviceContainer bg-[#F2F5EE] text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
-                    <div className="flex-1 flex-shrink text-base md:text-lg lg:text-xl font-bold uppercase text-center lg:text-left">
+                <div className="serviceContainer bg-[#f5f5ee] text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
+                    <div className="flex-1 flex-shrink text-base md:text-lg lg:text-2xl font-bold uppercase text-center lg:text-left">
                         Gönnen Sie sich unser Angebot an Schönheitsbehandlungen
                     </div>
-                    <div className="flex-1 text-sm md:text-base lg:text-lg font-medium uppercase text-justify mt-4 lg:mt-0">
+                    <div className="flex-1 text-sm md:text-base lg:text-lg font-medium uppercase text-left mt-4 lg:mt-0">
                         Tauchen Sie ein in eine Welt der Schönheit und Entspannung mit unseren vielfältigen Dienstleistungen, darunter Haarverwandlungen, Spa-Therapien und verjüngende Hautpflegebehandlungen
                     </div>
                 </div>
@@ -99,6 +99,8 @@ const Card = ({ card }) => {
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="eager"
             />
             <div className="absolute inset-0 z-10 grid place-content-center">
                 <p className="bg-gradient-to-br from-black/40 to-white/0 p-4 md:p-6 lg:p-8 text-2xl md:text-4xl lg:text-6xl font-black uppercase text-white">

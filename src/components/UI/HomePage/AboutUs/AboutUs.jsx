@@ -26,7 +26,7 @@ const AboutUs = () => {
                                 height={600}
                             /> */}
                             <ImageReveal
-                                src="/Images/about.jpg"
+                                src="/Images/haarwelt3.jpg"
                                 alt="Image About"
                                 width={600}
                                 height={700}

@@ -7,18 +7,18 @@ import { useTransform, useScroll, motion } from 'framer-motion';
 import AboutUs from '../AboutUs/AboutUs';
 
 const images = [
-    "work.jpg",
-    "work2.jpg",
-    "work3.jpg",
-    "work4.jpg",
-    "work3.jpg",
-    "work5.jpg",
-    "work1.jpg",
-    "work6.jpg",
-    "work7.jpg",
-    "work8.jpg",
-    "work8.jpg",
-    "12.jpg",
+    "haircut1.jpg",
+    "haircut2.jpg",
+    "haircut3.jpg",
+    "haircut4.jpg",
+    "works.jpg",
+    "haircut4.jpg",
+    "fusspflege2.jpg",
+    "service2.jpg",
+    "service1.jpg",
+    "service2.jpg",
+    "kosmetik.jpg",
+    "room1.jpg",
 ]
 
 const Gallery = () => {
@@ -69,7 +69,6 @@ const Gallery = () => {
                 <Column images={[images[9], images[10], images[11]]} y={y4} />
             </div>
             {/* <div className={styles.spacer}>
-                <DiscountPage />
             </div> */}
         </main>
     )
@@ -88,6 +87,8 @@ const Column = ({ images, y }) => {
                             src={`/Images/${src}`}
                             alt='image'
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            loading='eager'
                         />
                     </div>
                 })
