@@ -1,8 +1,11 @@
+"use client"
+
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import styles from './ImageReveal.module.css';
+import Lenis from '@studio-freight/lenis';
 
 const ImageReveal = ({ src, alt, width, height }) => {
     const overlayControls = useAnimation();
@@ -21,6 +24,17 @@ const ImageReveal = ({ src, alt, width, height }) => {
             });
         }
     }, [overlayControls, imageControls, inView]);
+
+
+    useEffect(() => {
+        const lenis = new Lenis();
+        const raf = (time) => {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+
+    }, []);
 
     return (
         <div className={styles.imgContainer} ref={ref}>

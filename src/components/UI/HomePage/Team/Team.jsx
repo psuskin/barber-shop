@@ -1,4 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+"use client"
+
+import React, { useEffect, useState } from 'react';
 import styles from "./team.module.css"
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -73,7 +75,7 @@ const Team = () => {
                   fill
                   objectFit="cover"
                   className={styles.teamImage}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   loading='eager'
                 />
               </div>

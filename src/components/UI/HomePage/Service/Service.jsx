@@ -1,3 +1,4 @@
+"use client"
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { FaArrowDownLong } from "react-icons/fa6";
@@ -73,7 +74,7 @@ const HorizontalScrollCarousel = () => {
                         return <Card card={card} key={card.id} />;
                     })}
                 </motion.div>
-                <div className="serviceContainer bg-[#f5f5ee] text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
+                <div className="serviceContainer bg-white text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
                     <div className="flex-1 flex-shrink text-base md:text-lg lg:text-2xl font-bold uppercase text-center lg:text-left">
                         Gönnen Sie sich unser Angebot an Schönheitsbehandlungen
                     </div>
@@ -99,7 +100,6 @@ const Card = ({ card }) => {
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 loading="eager"
             />
             <div className="absolute inset-0 z-10 grid place-content-center">

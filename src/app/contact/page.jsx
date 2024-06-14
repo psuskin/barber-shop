@@ -1,7 +1,11 @@
-import Head from 'next/head';
 import Image from 'next/image';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { generatePageMetadata } from '../seo';
 
+export const metadata = generatePageMetadata({
+    title: "Kontakt | Hannis Friseursalon",
+    description:
+        "Kontaktieren Sie Hannis Friseursalon in Hamburg für Terminvereinbarungen und weitere Informationen zu unseren Dienstleistungen. Unser freundliches Team steht Ihnen gerne zur Verfügung.",
+});
 const ContactPage = () => {
     return (
         <>

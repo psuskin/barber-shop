@@ -1,11 +1,15 @@
-"use client"
-import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
 import styles from "../../components/UI/HomePage/AboutUs/aboutus.module.css";
-import Lenis from "@studio-freight/lenis";
 import ImageReveal from "@/components/utils/ImageReveal";
+import { generatePageMetadata } from "../seo";
 
+
+export const metadata = generatePageMetadata({
+    title: "Über Uns | Hannis Friseursalon",
+    description:
+        "Erfahren Sie mehr über Hannis Friseursalon, Ihre Anlaufstelle für professionelle Haarpflege, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen in Hamburg. Unser engagiertes Team bietet Ihnen erstklassigen Service in einer entspannten Atmosphäre.",
+})
 const stories = [
     {
         title: "Die Reise zu Schönheit und Entspannung",
@@ -24,14 +28,7 @@ const stories = [
 const StoryItem = ({ item, index }) => {
     const { title, description, image } = item;
 
-    useEffect(() => {
-        const lenis = new Lenis();
-        const raf = (time) => {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        };
-        requestAnimationFrame(raf);
-    }, []);
+
 
     return (
         <>

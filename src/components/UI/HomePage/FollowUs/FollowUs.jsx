@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
@@ -60,8 +61,8 @@ const FollowUsSection = () => {
                                 alt={image.alt}
                                 layout="fill"
                                 objectFit="cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
-
                             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
                                 <FaInstagram className="text-white text-3xl" />
                             </div>
@@ -69,8 +70,6 @@ const FollowUsSection = () => {
                     </motion.div>
                 ))}
             </div>
-
-
         </section>
     );
 }

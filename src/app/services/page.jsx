@@ -1,10 +1,15 @@
-"use client"
-
+import ServiceAnimation from '@/components/UI/ServiceAnimation/ServiceAnimation';
 import ImageReveal from '@/components/utils/ImageReveal';
-import Lenis from '@studio-freight/lenis';
-import { useScroll, useTransform, motion } from 'framer-motion';
+
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { generatePageMetadata } from '../seo';
+
+export const metadata = generatePageMetadata({
+    title: "Dienstleistungen | Hannis Friseursalon",
+    description:
+        "Entdecken Sie die umfassenden Dienstleistungen von Hannis Friseursalon in Hamburg, einschließlich professioneller Haarschnitte, Haarspa, medizinischer Fußpflege, Kosmetik und ästhetischer Behandlungen. Unser erfahrenes Team bietet Ihnen erstklassige Pflege und ein unvergleichliches Schönheitserlebnis.",
+});
 
 
 const services = [
@@ -37,20 +42,6 @@ const services = [
 
 const ServicePage = () => {
 
-    const imageRef = useRef();
-    const { scrollYProgress } = useScroll({ target: imageRef });
-    const y = useTransform(scrollYProgress, [0, 1], [-20, 20]);
-
-
-    useEffect(() => {
-        const lenis = new Lenis();
-        const raf = (time) => {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        };
-        requestAnimationFrame(raf);
-
-    }, []);
 
     return (
         <section className="mb-40">
@@ -89,18 +80,7 @@ const ServicePage = () => {
                             height={600}
                         />
                     </div>
-                    <motion.div className="absolute bottom-4 -left-8 md:-left-28 w-40 h-40 md:w-80 md:h-72" style={{ y }}>
-                        <Image
-                            ref={imageRef}
-                            src="/Images/works.jpg"
-                            alt="Image 2"
-                            layout="responsive"
-                            width={200}
-                            height={200}
-                            objectFit="cover"
-                            className="rounded-lg shadow-xl hidden md:block"
-                        />
-                    </motion.div>
+                    <ServiceAnimation />
                 </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-36 w-4/5 mx-auto">
