@@ -6,7 +6,7 @@ import { generatePageMetadata } from "../seo";
 
 
 export const metadata = generatePageMetadata({
-    title: "Über Uns | Hannis Friseursalon",
+    title: "Über Uns",
     description:
         "Erfahren Sie mehr über Hannis Friseursalon, Ihre Anlaufstelle für professionelle Haarpflege, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen in Hamburg. Unser engagiertes Team bietet Ihnen erstklassigen Service in einer entspannten Atmosphäre.",
 })

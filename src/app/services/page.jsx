@@ -6,7 +6,7 @@ import React from 'react';
 import { generatePageMetadata } from '../seo';
 
 export const metadata = generatePageMetadata({
-    title: "Dienstleistungen | Hannis Friseursalon",
+    title: "Dienstleistungen",
     description:
         "Entdecken Sie die umfassenden Dienstleistungen von Hannis Friseursalon in Hamburg, einschließlich professioneller Haarschnitte, Haarspa, medizinischer Fußpflege, Kosmetik und ästhetischer Behandlungen. Unser erfahrenes Team bietet Ihnen erstklassige Pflege und ein unvergleichliches Schönheitserlebnis.",
 });

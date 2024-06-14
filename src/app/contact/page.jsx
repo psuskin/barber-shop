@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { generatePageMetadata } from '../seo';
 
 export const metadata = generatePageMetadata({
-    title: "Kontakt | Hannis Friseursalon",
+    title: "Kontakt",
     description:
         "Kontaktieren Sie Hannis Friseursalon in Hamburg für Terminvereinbarungen und weitere Informationen zu unseren Dienstleistungen. Unser freundliches Team steht Ihnen gerne zur Verfügung.",
 });

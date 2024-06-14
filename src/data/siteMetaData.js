@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 export const siteMetadata = {
-    title: "Hannis-Hamburg Schönheitssalon",
+    title: "Hannis Friseursalon",
     siteUrl: "https://hannis-hamburg.com",
     description:
         "Hannis-Hamburg bietet eine breite Palette professioneller Schönheitsdienstleistungen, darunter Haarschnitte, Haarspe, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen. Unser engagiertes Team sorgt dafür, dass Sie die beste Pflege und ein entspannendes Erlebnis erhalten.",
@@ -28,7 +28,7 @@ export const siteMetadata = {
 export const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Hannis-Hamburg Schönheitssalon",
+    name: "Hannis Friseursalon",
     url: "https://hannis-hamburg.com",
     sameAs: [
         "https://twitter.com/hannis_hamburg",

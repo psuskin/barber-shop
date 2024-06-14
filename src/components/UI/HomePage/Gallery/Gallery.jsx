@@ -16,7 +16,7 @@ const images = [
     "fusspflege2.jpg",
     "service2.jpg",
     "service1.jpg",
-    "service2.jpg",
+    "room6.jpg",
     "kosmetik.jpg",
     "room1.jpg",
 ]
