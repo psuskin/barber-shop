@@ -1,5 +1,4 @@
 /* heroSection.module.css */
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 .videoContainer {
     position: relative;
@@ -16,18 +15,18 @@
 .title {
     display: flex;
     justify-content: center;
-    font-size: 8vw;
+    font-size: 5rem;
     color: white;
     align-items: center;
-    font-family: "Belleza", sans-serif;
+    font-family: 'Concert One', sans-serif;
     font-weight: 200;
     z-index: 1;
 }
 
 
 .welcomeTitle {
-    margin-top: -10rem;
-    font-size: 5vw;
+    margin-top: -6rem;
+    font-size: 3rem;
     color: #D4A745;
     position: absolute;
     font-family: var(--fancyHeader);
@@ -56,10 +55,10 @@
 
 .muteBtn {
     position: absolute;
-    bottom: 2rem;
-    right: 1.5rem;
+    bottom: 3rem;
+    right: 3rem;
     z-index: 6;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.20);
     padding: 0.5rem;
     border-radius: 50%;
     display: flex;
@@ -68,10 +67,10 @@
 
 .playPauseBtn {
     position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    bottom: 3rem;
+    left: 3rem;
     z-index: 6;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.20);
     padding: 0.5rem;
     border-radius: 50%;
     display: flex;
@@ -82,7 +81,7 @@
 @media screen and (max-width: 768px) {
     .title {
         font-size: 2.5em;
-    
+
     }
 
     .welcomeTitle {
@@ -107,33 +106,35 @@
 }
 
 /* Responsive font size adjustments */
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .title {
-        font-size: 6em;
+        font-size: 3rem;
+        text-align: center;
+        white-space: nowrap;
     }
 
     .welcomeTitle {
-        font-size: 4em;
+        font-size: 2rem;
     }
 }
 
 
 @media screen and (max-width: 480px) {
     .title {
-        font-size: 2.5em;
+        font-size: 2rem;
     }
 
     .welcomeTitle {
-        font-size: 3em;
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     .title {
-        font-size: 2em;
+        font-size: 1.9rem;
     }
 
     .welcomeTitle {
         font-size: 2em;
     }
-} */
+}

@@ -96,7 +96,7 @@ const Card = ({ card }) => {
         >
             <Image
                 src={card.url}
-                alt={card.alt}
+                alt={card.title}
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"

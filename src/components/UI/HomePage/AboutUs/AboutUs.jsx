@@ -57,7 +57,7 @@ const AboutUs = () => {
                 onMouseLeave={() => setHovered(false)}
             >
                 <span className="flex items-center justify-center">
-                    <span>Read more</span>
+                    <span>Mehr über uns erfahren</span>
                     <FaChevronRight
                         className={`h-5 w-5 ml-2 transform transition-transform duration-300 ${hovered ? 'translate-x-3' : ''}`}
                     />

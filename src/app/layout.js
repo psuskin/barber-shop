@@ -18,6 +18,14 @@ export const metadata = {
     siteName: siteMetadata.title,
     locale: "de_DE",
     type: "website",
+    images: [
+      {
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
+        width: 1200,
+        height: 630,
+        alt: "Hannis Friseursalon",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -33,11 +41,13 @@ export const metadata = {
   twitter: {
     title: siteMetadata.title,
     card: "summary_large_image",
+    image: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
   },
 };
 
-
 export default function RootLayout({ children }) {
+  const ogImage = metadata.openGraph.images && metadata.openGraph.images[0];
+  
   return (
     <html lang="de">
       <Head>
@@ -49,10 +59,19 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <meta property="og:locale" content={metadata.openGraph.locale} />
         <meta property="og:type" content={metadata.openGraph.type} />
+        {ogImage && (
+          <>
+            <meta property="og:image" content={ogImage.url} />
+            <meta property="og:image:width" content={ogImage.width} />
+            <meta property="og:image:height" content={ogImage.height} />
+            <meta property="og:image:alt" content={ogImage.alt} />
+          </>
+        )}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
       </Head>
       <body>
         <Navbar />

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./heroSection.module.css";
 import Lenis from "@studio-freight/lenis";
+import Image from "next/image";
 
 const HeroSection = () => {
     const videoRef = useRef(null);
@@ -47,80 +48,27 @@ const HeroSection = () => {
                     preload="metadata"
                     poster="/Images/poster.jpg"
                 >
-                    <source src="/Video/barberShop1.webm" type="video/webm" />
-                    <source src="/Video/barberShop1.mp4" type="video/mp4" />
+                    <source src="/Video/video-header.webm" type="video/webm" />
+                    <source src="/Video/video-header.mp4" type="video/mp4" />
                 </video>
-                <h1 className={styles.welcomeTitle}>Willkommen im Hannis Friseursalon</h1>
+                <h2 className={styles.welcomeTitle}>Willkommen im Hannis Friseursalon</h2>
                 <h1 className={styles.title}>Exzellenz in Schönheit</h1>
             </div>
             <div className={styles.blur}></div>
-            <button onClick={toggleMuteUnmute} className={styles.muteBtn}>
+            <button onClick={toggleMuteUnmute} className={styles.muteBtn} aria-label="Toggle Mute">
                 {isMuted ? (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="#ffffff"
-                        stroke="#ffffff"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <rect x="3" y="9" width="7" height="6" rx="1"></rect>
-                        <path d="M14 9l6 6m0-6l-6 6"></path>
-                    </svg>
+                    <Image src="/mute.svg" alt="Mute" width="20" height="20" />
                 ) : (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="#ffffff"
-                        stroke="#ffffff"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <rect x="3" y="9" width="7" height="6" rx="1"></rect>
-                        <path d="M14 9v6"></path>
-                        <path d="M17 9.5v5"></path>
-                        <path d="M21 10v4"></path>
-                    </svg>
+                    <Image src="/unmute.svg" alt="Unmute" width="20" height="20" />
                 )}
             </button>
 
+
             <button onClick={togglePlayPause} className={styles.playPauseBtn}>
                 {isPlaying ? (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="#ffffff"
-                        className="w-5 h-5 text-inherit"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M15.75 5.25v13.5m-7.5-13.5v13.5"
-                        />
-                    </svg>
+                    <Image src="/pause.svg" alt="Mute" width="20" height="20" />
                 ) : (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="#ffffff"
-                        className="w-5 h-5 text-inherit"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-                        />
-                    </svg>
+                    <Image src="/play.svg" alt="Mute" width="20" height="20" />
                 )}
             </button>
         </div>

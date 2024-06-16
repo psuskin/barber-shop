@@ -1,7 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 export const siteMetadata = {
     title: "Hannis Friseursalon",
-    siteUrl: "https://hannis-hamburg.com",
+    siteUrl: "https://barber-shop-rho-eight.vercel.app",
+    socialBanner: "/Images/og.jpg",
     description:
         "Hannis-Hamburg bietet eine breite Palette professioneller Schönheitsdienstleistungen, darunter Haarschnitte, Haarspe, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen. Unser engagiertes Team sorgt dafür, dass Sie die beste Pflege und ein entspannendes Erlebnis erhalten.",
     keywords: [
@@ -29,7 +30,7 @@ export const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Hannis Friseursalon",
-    url: "https://hannis-hamburg.com",
+    url: "https://barber-shop-rho-eight.vercel.app/",
     sameAs: [
         "https://twitter.com/hannis_hamburg",
         "https://www.linkedin.com/company/hannis-hamburg",
@@ -39,7 +40,7 @@ export const schemaMarkup = {
     description:
         "Hannis-Hamburg bietet eine breite Palette professioneller Schönheitsdienstleistungen, darunter Haarschnitte, Haarspe, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen. Unser engagiertes Team sorgt dafür, dass Sie die beste Pflege und ein entspannendes Erlebnis erhalten.",
     email: "info@hannis-hamburg.com",
-    image: "https://hannis-hamburg.com/images/og-hannis-hamburg.png",
+    image: "https://barber-shop-rho-eight.vercel.app/images/og.jpg",
     address: {
         "@type": "PostalAddress",
         streetAddress: "Schönheitsweg 123",
