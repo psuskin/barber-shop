@@ -8,11 +8,12 @@ function Footer() {
                 <div className="mapSection h-full">
                     <iframe
                         className="map h-full w-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.034759532077!2d-73.99112148561158!3d40.73787528932278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25896f964c2eb%3A0x3fb19f9e7e93c033!2sBarber%20Shop!5e0!3m2!1sen!2sus!4v1638969833464!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.0491540611692!2d9.9193!3d53.556889999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4163bcb2de2e4fc7%3A0x62d619db6e9d58ce!2sHannis%20hairdressing%20and%20beauty%20salon!5e0!3m2!1sen!2sbd!4v1719252264566!5m2!1sen!2sbd"
                         allowFullScreen={true}
                         loading="lazy"
                         title="BarberShop Location"
                     ></iframe>
+
                 </div>
             </div>
 
@@ -61,27 +62,27 @@ function Footer() {
                             <p className="font-medium text-gray-900">Dienstleistung</p>
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Haarwelt </span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Hair SPA </span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Med. Fusspflege </span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Kosmetik </span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Ästhetische Behandlung </span>
                                     </Link>
                                 </li>
@@ -116,23 +117,13 @@ function Footer() {
                         <ul className="flex flex-wrap gap-4 text-xs">
                             <li>
                                 <Link href="#">
-                                    <span className="text-gray-500 transition hover:opacity-75"> Allgemeine Geschäftsbedingungen </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <span className="text-gray-500 transition hover:opacity-75"> Datenschutzerklärung </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
                                     <span className="text-gray-500 transition hover:opacity-75"> Cookies </span>
                                 </Link>
                             </li>
                         </ul>
 
                         <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-                            &copy; 2024. Friseursalon. Alle Rechte vorbehalten.
+                            &copy; 2024. HANNIS FRISEURSALON. Alle Rechte vorbehalten.
                         </p>
                     </div>
                 </div>

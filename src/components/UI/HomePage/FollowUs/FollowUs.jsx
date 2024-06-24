@@ -1,8 +1,8 @@
 "use client"
 import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
-import { useRef } from 'react';
+
 
 const images = [
     { src: '/Images/service1.jpg', alt: 'Image 1', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
@@ -15,35 +15,10 @@ const images = [
 
 const FollowUsSection = () => {
 
-    const containerRef = useRef();
-    const { scrollYProgress } = useScroll({ target: containerRef });
-    const y = useTransform(scrollYProgress, [0, 1], [-20, 20]);
-    const ys = useTransform(scrollYProgress, [0, 1], [-10, 10]);
-
-
+   
     return (
-        <section className="py-12 bg-gray-100 h-[90vh]">
-            <div className='relative' ref={containerRef}>
-                <div className='bg-red-200 absolute h-60 lg:h-80 w-full sm:w-2/4 mx-auto top-0 lg:-top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                    <div className='relative w-full h-full'>
-                        <Image
-                            src="/Images/feature.jpg"
-                            layout="fill"
-                            objectFit="cover"
-                            alt="Feature Image"
-                        />
-                        <div className='absolute inset-y-0 right-0 flex flex-col justify-center text-center p-4 w-2/3 lg:w-1/2' >
-                            <motion.h2 className='text-2xl lg:text-5xl opacity-15 font-extrabold font-Dancing tracking-wider' style={{ y: y }}>
-                                Strahlen & Erneuern
-                            </motion.h2>
-                            <motion.h2 className='text-lg lg:text-3xl font-bold -mt-4 text-gray-700 tracking-wide' style={{ y: ys }}>Exklusive Frühlingsaktion</motion.h2>
-                            <p className='text-base lg:text-lg'>Entdecken Sie Ihre Schönheit mit 20% Rabatt</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="text-center mb-8 mt-60">
+        <section className="py-16 bg-gray-100 h-[70vh]">
+            <div className="text-center mb-8">
                 <p className="text-sm uppercase tracking-wide text-gray-600">Stil • Jeden Tag</p>
                 <h2 className="text-3xl font-semibold text-gray-900">Folge unserem Instagram</h2>
                 <p className="text-gray-500">@hannisfriseursalon</p>

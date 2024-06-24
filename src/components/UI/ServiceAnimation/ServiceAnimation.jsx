@@ -15,7 +15,7 @@ const ServiceAnimation = () => {
 
     return (
 
-        <motion.div className="absolute bottom-4 -left-8 md:-left-28 w-40 h-40 md:w-80 md:h-72" style={{ y }}>
+        <motion.div className="absolute bottom-4 -left-10 md:-left-16 w-40 h-40 md:w-80 md:h-72" style={{ y }}>
             <Image
                 ref={imageRef}
                 src="/Images/works.jpg"

@@ -103,7 +103,7 @@ const Review = () => {
     }, []);
 
     return (
-        <section className="light relative mb-60 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1] ">
+        <section className="light relative mb-28 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1] ">
             <div className="my-4 mb-10 lg:mb-20 container mx-auto px-2">
                 <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-semibold font-Dancing'>Kundenstimmen</h3>
                 <h1 className='text-2xl lg:text-[2rem] font-semibold'>Was unsere Kunden über uns sagen</h1>

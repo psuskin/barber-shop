@@ -74,11 +74,11 @@ const HorizontalScrollCarousel = () => {
                         return <Card card={card} key={card.id} />;
                     })}
                 </motion.div>
-                <div className="serviceContainer bg-white text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 items-center p-4 md:p-6 lg:p-10 mx-auto">
-                    <div className="flex-1 flex-shrink text-base md:text-lg lg:text-2xl font-bold uppercase text-center lg:text-left">
+                <div className="bg-white text-gray-700 flex flex-col lg:flex-row justify-between absolute -bottom-2 lg:bottom-10 right-0 lg:right-40 gap-2 lg:gap-4 h-auto lg:h-1/4 w-full lg:w-2/4 md:w-3/5 items-center p-4 md:p-4 lg:p-8 mx-auto">
+                    <div className="flex-1 text-base md:text-lg lg:text-xl font-bold uppercase text-center lg:text-left">
                         Gönnen Sie sich unser Angebot an Schönheitsbehandlungen
                     </div>
-                    <div className="flex-1 text-sm md:text-base lg:text-lg font-medium uppercase text-left mt-4 lg:mt-0">
+                    <div className="lg:flex-1 md:flex-none text-sm md:text-base lg:text-sm font-medium uppercase text-center lg:text-left">
                         Tauchen Sie ein in eine Welt der Schönheit und Entspannung mit unseren vielfältigen Dienstleistungen, darunter Haarverwandlungen, Spa-Therapien und verjüngende Hautpflegebehandlungen
                     </div>
                 </div>

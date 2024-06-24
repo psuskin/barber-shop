@@ -59,7 +59,7 @@ const ServicePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-around items-center w-11/12 lg:w-3/5 h-auto lg:h-[600px] mx-auto mb-24 space-y-10 lg:space-y-0 mt-20 ">
+            <div className="flex flex-col lg:flex-row justify-around items-center w-11/12 md:w-4/5 h-auto lg:h-[600px] mx-auto mb-24 space-y-10 lg:space-y-0 mt-20 ">
                 <div className="text-center space-y-6 lg:w-1/3 px-4 bg-[#f8ebd0] p-20">
                     <h2 className="text-4xl mb-2 font-light">Unsere Dienstleistungen</h2>
                     <p className="text-lg text-gray-600 mb-4">
