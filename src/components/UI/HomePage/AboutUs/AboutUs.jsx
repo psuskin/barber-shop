@@ -10,7 +10,7 @@ import ImageReveal from "@/components/utils/ImageReveal";
 const AboutUs = () => {
     const [hovered, setHovered] = useState(false)
     return (
-        <section className=" light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden relative">
+        <section className=" light bg-white text-zinc-900  overflow-hidden relative">
             <div className="container mx-auto mb-4 px-4">
                 <h3 className="text-xl lg:text-[2rem] font-bold text-[#D4A745] font-Dancing">Über Uns</h3>
                 <h1 className="text-2xl lg:text-[2rem] font-semibold tracking-wide leading-tight">Erlebe eine besondere Schönheitsreise in unserem Salon</h1>

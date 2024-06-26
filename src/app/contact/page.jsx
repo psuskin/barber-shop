@@ -24,7 +24,7 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row lg:space-x-8 lg:p-8 p-4 container lg:w-3/5 mx-auto mt-36">
+                <div className="flex flex-col lg:flex-row lg:space-x-8 lg:p-8 p-4 container lg:w-4/5 mx-auto mt-36">
                     <div className="bg-yellow-50 p-8 lg:w-1/3">
                         <h3 className="text-2xl font-semibold text-[#D4A745]">Kontakt Informationen</h3>
                         <ul className="mt-4 space-y-4">
@@ -103,7 +103,7 @@ const ContactPage = () => {
                             <div>
                                 <button
                                     type="submit"
-                                    className="group relative lg:w-1/4 flex justify-center py-4 px-4 border border-transparent text-sm font-medium text-white bg-[#D4A745] hover:bg-[#b89334] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4A745]"
+                                    className="group relative lg:w-[150px]  flex justify-center py-4 px-4 border border-transparent text-sm font-medium text-white bg-[#D4A745] hover:bg-[#b89334] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4A745]"
                                 >
                                     Nachricht Senden
                                 </button>

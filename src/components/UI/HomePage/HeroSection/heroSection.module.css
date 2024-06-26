@@ -51,6 +51,7 @@
     bottom: -90px;
     filter: blur(40px);
     z-index: 5;
+    overflow: hidden;
 }
 
 .muteBtn {

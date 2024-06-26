@@ -78,7 +78,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <section className="container mx-auto py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+            <section className="container mx-auto py-14 md:py-24 bg-white text-zinc-900 ">
                 <div className="container px-4 mt-20">
                     <div className="grid grid-cols-12 justify-center text-center mb-12">
                         <div className="col-span-12 md:col-span-8 md:col-start-3">

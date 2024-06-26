@@ -59,7 +59,7 @@ const ServicePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-around items-center w-11/12 md:w-4/5 h-auto lg:h-[600px] mx-auto mb-24 space-y-10 lg:space-y-0 mt-20 ">
+            <div className="flex flex-col lg:flex-row justify-around items-center w-11/12 md:w-4/5 h-auto lg:h-[600px] mx-auto mb-24 space-y-10 lg:space-y-0 mt-20">
                 <div className="text-center space-y-6 lg:w-1/3 px-4 bg-[#f8ebd0] p-20">
                     <h2 className="text-4xl mb-2 font-light">Unsere Dienstleistungen</h2>
                     <p className="text-lg text-gray-600 mb-4">
@@ -83,9 +83,9 @@ const ServicePage = () => {
                     <ServiceAnimation />
                 </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-36 w-4/5 mx-auto">
+            <div className="flex flex-wrap justify-center gap-2 pt-20 mx-auto w-full">
                 {services.map((service, index) => (
-                    <div key={index} className="relative overflow-hidden group w-80 h-80 mx-auto">
+                    <div key={index} className="relative overflow-hidden group w-80 h-80">
                         <Image
                             src={service.image}
                             alt={service.title}
@@ -95,11 +95,12 @@ const ServicePage = () => {
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-10 hover:bg-opacity-20 transition-opacity duration-500 flex flex-col justify-center items-center text-center">
                             <h3 className="text-white text-lg font-semibold">{service.title}</h3>
-                            <p className="text-white text-sm mt-2 w-3/5">{service.description}</p>
+                            <p className="text-white text-sm mt-2 px-4">{service.description}</p>
                         </div>
                     </div>
                 ))}
             </div>
+
         </section>
     );
 };

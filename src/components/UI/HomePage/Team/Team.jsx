@@ -59,7 +59,7 @@ const Team = () => {
 
 
   return (
-    <section className="light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden mt-10 mb-10">
+    <section className="light bg-white text-zinc-900 overflow-hidden mt-10 mb-10">
       <div className="mb-8 lg:mb-14 container mx-auto px-2">
         <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-Dancing pb-2'>Unser Team</h3>
         <h1 className='text-2xl lg:text-[2rem] font-semibold'>Lernen Sie unsere erfahrenen Styler kennen</h1>
@@ -86,18 +86,18 @@ const Team = () => {
                 <p className="mb-6">{designation}</p>
                 <p className="opacity-50 mb-0 leading-7">{bio}</p>
               </div>
-              <div className="absolute w-24 text-right right-[13%] -bottom-6 lg:bottom-0 text-[150px] text-[#dbac47] dark:text-slate-700 font-Dancing">
+              <div className="absolute w-24 text-right right-[13%] -bottom-6 lg:bottom-0 text-[150px] text-[#dbac47] font-Dancing">
                 {index + 1}
               </div>
               <div className="-mt-10 -translate-y-7">
                 <button
-                  className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-[#FFD571] inline-flex justify-center items-center transition duration-300 hover:bg-[#FFD571] dark:hover:bg-slate-700 mr-3"
+                  className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-[#FFD571] inline-flex justify-center items-center transition duration-300 hover:bg-[#FFD571] mr-3"
                   onClick={() => handleControl("prev")}
                 >
                   <FaChevronLeft className='text-[#D4A745]' />
                 </button>
                 <button
-                  className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-[#FFD571] inline-flex justify-center items-center transition duration-300 hover:bg-[#FFD571] dark:hover:bg-slate-700"
+                  className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-[#FFD571] inline-flex justify-center items-center transition duration-300 hover:bg-[#FFD571] "
                   onClick={() => handleControl("next")}
                 >
                   <FaChevronRight className='text-[#D4A745]' />

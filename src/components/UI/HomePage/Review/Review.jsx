@@ -55,7 +55,7 @@ const Rating = ({ rating, showLabel, className, ...rest }) => {
                 );
             } else {
                 stars.push(
-                    <FaStar key={i} className="text-yellow-200 dark:text-opacity-20" />
+                    <FaStar key={i} className="text-yellow-200" />
                 );
             }
         }
@@ -103,7 +103,7 @@ const Review = () => {
     }, []);
 
     return (
-        <section className="light relative mb-28 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white z-[1] ">
+        <section className="light relative mb-28 md:py-12 bg-white  text-zinc-900 z-[1] ">
             <div className="my-4 mb-10 lg:mb-20 container mx-auto px-2">
                 <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-semibold font-Dancing'>Kundenstimmen</h3>
                 <h1 className='text-2xl lg:text-[2rem] font-semibold'>Was unsere Kunden über uns sagen</h1>
@@ -129,7 +129,7 @@ const Review = () => {
                                 </motion.div>
                             </div>
                             <div className="md:w-1/2 relative">
-                                <div className="absolute -top-[10%] md:top-0 right-0 left-0 md:-left-[20%] bottom-0 bg-gray-600 dark:bg-gray-800 -z-[1] rounded-xl"></div>
+                                <div className="absolute -top-[10%] md:top-0 right-0 left-0 md:-left-[20%] bottom-0 bg-gray-600 -z-[1] rounded-xl"></div>
                                 <div className="flex flex-col justify-center h-full mb-10 md:mb-0 text-white">
                                     <div className="p-6 lg:py-16 mb-6">
                                         <h4 className="text-2xl font-bold mb-4">
@@ -140,13 +140,13 @@ const Review = () => {
                                     </div>
                                     <div className="px-6 lg:px-12 text-end">
                                         <button
-                                            className="w-10 h-10 text-[12px] bg-transparent border border-slate-400 dark:border-slate-600 rounded-full inline-flex items-center justify-center duration-150 hover:bg-slate-400 hover:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 mr-3"
+                                            className="w-10 h-10 text-[12px] bg-transparent border border-slate-400 rounded-full inline-flex items-center justify-center duration-150 hover:bg-slate-400 hover:text-slate-800  mr-3"
                                             onClick={() => handleControl("prev")}
                                         >
                                             <FaChevronLeft />
                                         </button>
                                         <button
-                                            className="w-10 h-10 text-[12px] bg-transparent border border-slate-400 dark:border-slate-600 rounded-full inline-flex items-center justify-center duration-150 hover:bg-slate-400 hover:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200"
+                                            className="w-10 h-10 text-[12px] bg-transparent border border-slate-400 rounded-full inline-flex items-center justify-center duration-150 hover:bg-slate-400 hover:text-slate-800 "
                                             onClick={() => handleControl("next")}
                                         >
                                             <FaChevronRight />
