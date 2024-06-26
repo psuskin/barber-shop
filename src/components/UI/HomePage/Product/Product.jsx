@@ -4,43 +4,35 @@ import Image from 'next/image';
 const productsList = [
     {
         image: "/Images/GENESISHOMME1.jpg",
-        title: "Shampoos & Conditioner",
-        categories: ["Haarwelt"],
+        title: "Genesis Homme Spray de Force Épaississant"
     },
     {
         image: "/Images/GENESISHOMME2.jpg",
-        title: "Haarmasken & Behandlungen",
-        categories: ["Haarwelt"],
+        title: "Genesis Homme Bain de Masse Épaississant"
     },
     {
         image: "/Images/GENESISHOMME3.jpg",
-        title: "Tiefenpflegende Behandlungen",
-        categories: ["Hair SPA"],
+        title: "Genesis Homme Cire d'Épaisseur Texturisante"
     },
     {
         image: "/Images/GENESISHOMME4.jpg",
-        title: "Kopfhautbehandlungen",
-        categories: ["Hair SPA"],
+        title: "Genesis Homme Routine"
     },
     {
         image: "/Images/GENESISHOMME5.jpg",
-        title: "Fußcremes & Balsame",
-        categories: ["Med. Fusspflege"],
+        title: "Genesis Homme Routine 2"
     },
     {
         image: "/Images/GENESISHOMME6.jpg",
-        title: "Fußpeelings & Schrubber",
-        categories: ["Med. Fusspflege"],
+        title: "Genesis Homme Sérum Anti-Chute Fortifiant"
     },
     {
         image: "/Images/GENESIS_BAINHYDRA_TEXTURE_ECOMM.jpg",
-        title: "Foundations & Concealer",
-        categories: ["Kosmetik"],
+        title: "Genesis Bain Hydra-Fortifiant Shampoo"
     },
     {
         image: "/Images/GENESIS_MASQUEBOX_ECOMM.jpg",
-        title: "Lippenstifte & Lipglosse",
-        categories: ["Kosmetik"],
+        title: "Genesis Masque Box"
     }
 ];
 
@@ -75,7 +67,6 @@ const Product = () => {
                                     <h5 className="text-xl font-medium mb-2">
                                         {product.title}
                                     </h5>
-                                    <p className="mb-0">{product.categories.join(", ")}</p>
                                 </div>
                             </div>
                         </div>
