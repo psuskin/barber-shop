@@ -30,27 +30,27 @@ function Footer() {
                             </Link>
                         </p>
 
-                        <ul className="mt-8 space-y-1 text-sm text-gray-700">
-                            <li>Montag bis Freitag: 9 Uhr - 19 Uhr</li>
-                            <li>Samstag: 9 Uhr - 17 Uhr</li>
-                            <li>Sonntag: Geschlossen</li>
+                        <ul className="mt-8 space-y-1 text-base text-gray-700">
+                            <li className="flex items-center text-gray-700">
+                                Mo-Fr: 09:00 - 19:00
+                                <br />
+                                Samstag: 09:00 - 18:00
+                                <br />
+                                Sonntag: Geschlossen
+                                <br />
+                                Montag: Geschlossen
+                            </li>
                         </ul>
 
                         <ul className="mt-8 flex gap-6">
                             <li>
-                                <Link href="#">
-                                    <FaFacebook className='w-8 h-8 text-gray-700 transition hover:opacity-75' />
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">
+                                <Link href="https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy" target="_blank" rel="noopener noreferrer">
                                     <FaInstagram className='w-8 h-8 text-gray-700 transition hover:opacity-75' />
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="#">
+                                <Link href="https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1" target="_blank" rel="noopener noreferrer">
                                     <FaTiktok className='w-8 h-8 text-gray-700 transition hover:opacity-75' />
                                 </Link>
                             </li>
@@ -59,8 +59,8 @@ function Footer() {
 
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div>
-                            <p className="font-medium text-gray-900">Dienstleistung</p>
-                            <ul className="mt-6 space-y-4 text-sm">
+                            <p className="font-medium text-lg text-gray-900">Dienstleistung</p>
+                            <ul className="mt-6 space-y-4 text-base">
                                 <li>
                                     <Link href="/services">
                                         <span className="text-gray-700 transition hover:opacity-75"> Haarwelt </span>
@@ -90,8 +90,8 @@ function Footer() {
                         </div>
 
                         <div>
-                            <p className="font-medium text-gray-900">Über Uns</p>
-                            <ul className="mt-6 space-y-4 text-sm">
+                            <p className="font-medium text-lg text-gray-900">Über Uns</p>
+                            <ul className="mt-6 space-y-4 text-base">
                                 <li>
                                     <Link href="/about">
                                         <span className="text-gray-700 transition hover:opacity-75"> Unsere Geschichte </span>
@@ -105,6 +105,11 @@ function Footer() {
                                 <li>
                                     <Link href="#">
                                         <span className="text-gray-700 transition hover:opacity-75"> Unsere Werte </span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <span className="text-gray-700 transition hover:opacity-75"> Impressum </span>
                                     </Link>
                                 </li>
                             </ul>

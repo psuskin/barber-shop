@@ -10,18 +10,19 @@ export const metadata = generatePageMetadata({
     description:
         "Erfahren Sie mehr über Hannis Friseursalon, Ihre Anlaufstelle für professionelle Haarpflege, medizinische Fußpflege, Kosmetik und ästhetische Behandlungen in Hamburg. Unser engagiertes Team bietet Ihnen erstklassigen Service in einer entspannten Atmosphäre.",
 })
+
 const stories = [
     {
-        title: "Die Reise zu Schönheit und Entspannung",
+        title: "Vielfalt an Dienstleistungen",
         description:
-            "In unserem Schönheitssalon glauben wir an die transformative Kraft von Entspannung und Selbstpflege. Unsere Reise begann mit einer Leidenschaft für Schönheit und dem Engagement, unseren Kunden eine Oase der Ruhe zu bieten. Durch jahrelange Hingabe haben wir eine Umgebung geschaffen, in der die sanftesten Berührungen, die geschicktesten Hände und die hochwertigsten Produkte zusammenkommen, um ein unvergleichliches Erlebnis von Komfort und Erholung zu schaffen.",
+            "Wir bieten ein breites Spektrum an Dienstleistungen an, um Ihre Schönheit und Ihr Wohlbefinden zu fördern. Neben professionellen Haarschnitten für Männer und Frauen, umfasst unser Angebot medizinische Fußpflege, die von geschulten Experten durchgeführt wird. Unsere Schönheitsdienstleistungen wie Haarentfernung und Wimpernverlängerungen sind darauf ausgelegt, Ihr Aussehen zu perfektionieren. Jedes Familienmitglied bringt seine Expertise ein, um Ihnen die bestmögliche Behandlung zu bieten.",
         image: "/Images/works1.jpg"
     },
     {
-        title: "Ihr Weg zur Eleganz",
+        title: "Räume für besondere Anlässe",
         description:
-            "In unserem Salon bemühen wir uns, Ihre Schönheit und Ihr Wohlbefinden bei jedem Besuch zu steigern. Unser Team erfahrener Fachleute bietet individuelle Dienstleistungen, die auf Ihre einzigartigen Bedürfnisse zugeschnitten sind. Ob Sie eine revitalisierende Gesichtsbehandlung, eine entspannende Massage oder eine atemberaubende neue Frisur suchen, wir bieten eine ruhige und einladende Atmosphäre, in der Sie sich entspannen und verwöhnen lassen können. Unser Engagement für Exzellenz stellt sicher, dass jeder Moment, den Sie bei uns verbringen, ein Schritt in Richtung Ihres persönlichen Paradieses aus Eleganz und Gelassenheit ist.",
-        image: "/Images/aboutus1.jpg"
+            "Unser Salon bietet nicht nur erstklassige Dienstleistungen, sondern auch spezielle Räume für besondere Anlässe. Ob Hochzeiten, Jubiläen oder andere Feierlichkeiten – wir sorgen dafür, dass Sie an Ihrem besonderen Tag strahlen. Unsere gemütlichen und stilvollen Räumlichkeiten schaffen eine entspannte Atmosphäre, in der Sie sich rundum wohlfühlen können. Bei Hannis Beautysalon steht Qualität und Individualität an erster Stelle, damit Ihr Besuch bei uns zu einem unvergesslichen Erlebnis wird.",
+        image: "/Images/aboutus2.jpg"
     }
 ];
 
@@ -35,7 +36,7 @@ const StoryItem = ({ item, index }) => {
             <div className={`col-span-12 md:col-span-5 ${index % 2 === 0 ? "order-1 md:order-2 md:col-start-7" : "order-2 md:order-1 md:col-start-2"}`}>
                 <div className={`flex flex-col justify-center ${index % 2 === 0 ? "lg:pl-14" : "lg:pr-14"}`}>
                     <h4 className="text-2xl font-bold mb-4">{title}</h4>
-                    <p className="text-base leading-relaxed text-justify opacity-70 mb-0 md:pr-6">
+                    <p className="text-[16px] leading-relaxed text-justify opacity-70 mb-0 md:pr-6">
                         {description}
                     </p>
                 </div>
@@ -65,7 +66,7 @@ const About = () => {
             <div className="relative h-96 w-full">
                 <Image
                     fill
-                    src="/Images/ff.jpg"
+                    src="/Images/titlepicture.jpg"
                     alt="About Us Banner"
                     className="object-cover w-full h-full"
                 />
@@ -83,10 +84,10 @@ const About = () => {
                     <div className="grid grid-cols-12 justify-center text-center mb-12">
                         <div className="col-span-12 md:col-span-8 md:col-start-3">
                             <h2 className={`${styles.title} text-[42px] font-normal leading-[52px] z-[1] md:text-6xl md:leading-10 relative after:bottom-2.5 after:-translate-x-1/2 mb-12`}>
-                                Unsere <span className="text-[#D4A745]">Geschichte</span>
+                                Unsere Familie, <span className="text-[#D4A745]">Ihre Schönheit </span>
                             </h2>
                             <p className="text-xl opacity-80 mb-4">
-                                Unser Schönheitssalon begann mit einer Leidenschaft für die Verbesserung der natürlichen Schönheit und der Schaffung einer ruhigen Oase für unsere Kunden. Wir sind bestrebt, personalisierte Dienstleistungen anzubieten, die Sie verjüngt und elegant fühlen lassen.
+                                Hannis Beautysalon ist ein familiengeführtes Unternehmen, das sich seit Jahren der Schönheit und Pflege widmet. Unser Team besteht aus erfahrenen Fachkräften, die leidenschaftlich für Ihr Wohlbefinden arbeiten. Der Familienvater ist ein Meister im Bereich der Männerhaarschnitte und sorgt für zeitgemäße und klassische Styles. Unsere Gründerin und ihr talentierter Sohn kümmert sich um die Haarpflege und Schönheit der Damen. Bei uns stehen Sie und Ihre Wünsche im Mittelpunkt, denn Ihre Zufriedenheit ist unser größtes Anliegen.
                             </p>
                         </div>
                     </div>

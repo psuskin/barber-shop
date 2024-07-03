@@ -5,10 +5,10 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from "./zoom.module.css"
 
-import Picture1 from '../../../../../public/Images/haarwelt.jpg';
+import Picture1 from '../../../../../public/Images/works.jpg';
 import Picture2 from '../../../../../public/Images/asthetische.jpg';
 import Picture3 from '../../../../../public/Images/haircut1.jpg';
-import Picture4 from '../../../../../public/Images/works.jpg'
+import Picture4 from '../../../../../public/Images/haarwelt.jpg'
 import Picture5 from '../../../../../public/Images/haircut4.jpg'
 import Picture6 from '../../../../../public/Images/fusspflege1.jpg'
 import Picture7 from '../../../../../public/Images/service1.jpg'

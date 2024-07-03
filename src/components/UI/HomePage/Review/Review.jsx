@@ -9,33 +9,30 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const reviewList = [
     {
         author: {
-            fullName: "Ankita Nath",
-            picture: "/Images/review2.jpg",
-            designation: "Gründerin / CEO",
-        },
-        rating: 3.5,
-        description:
-            "Ich hatte eine fantastische Erfahrung im Hannis Friseursalon. Das Personal war freundlich und professionell, und ich habe einen ausgezeichneten Haarschnitt bekommen, der perfekt zu meinem Stil passt. Ich empfehle Ihre Dienste jedem, der einen erstklassigen Friseur sucht.",
-    },
-    {
-        author: {
-            fullName: "Raima Sen",
-            picture: "/Images/review3.jpg",
-            designation: "Gründerin / CEO",
-        },
-        rating: 4,
-        description:
-            "Ich bin seit Jahren Stammkunde im Hannis Friseursalon und bin immer beeindruckt von der Qualität des Services, den ich erhalte. Die Friseure sind geschickt und aufmerksam, und ich verlasse den Salon immer mit einem selbstbewussten und erfrischten Gefühl. Weiter so!",
-    },
-    {
-        author: {
-            fullName: "Rashid Sheikh",
-            picture: "/Images/review4.jpg",
-            designation: "Gründer / CEO",
+            fullName: "Claudia Barha",
+            picture: "/Images/cloudia.jpg",
         },
         rating: 5,
         description:
-            "Ich habe kürzlich den Hannis Friseursalon zum ersten Mal besucht und könnte nicht zufriedener mit dem Ergebnis sein. Der Friseur hat meine Vorlieben berücksichtigt und genau das geliefert, was ich wollte. Ich werde definitiv wiederkommen und Ihren Salon weiterempfehlen.",
+            "Super Meisterin. Klasse Ergebnisse und Top Beratung. Ich kann den Salon absolut weiter empfehlen. Sehr professionell, egal was man mit seinen Haaren machen möchte. Habe sowohl meine Haare schneiden lassen als auch meine Haarfarbe verändert. Auch wurden mir schon tolle Hochsteckfrisuren gemacht. Alles hat klasse ausgesehen. 5 Sterne plus 😊",
+    },
+    {
+        author: {
+            fullName: "Maik Redmann",
+            picture: "/Images/maikredmann.jpg",
+        },
+        rating: 5,
+        description:
+            "Bei Hannis fühlt man sich und seine Haare gut aufgehoben 😊 Ein sehr freundliches und kompetentes Team kümmert sich sehr gut um einen.",
+    },
+    {
+        author: {
+            fullName: "Inge Schneider",
+            picture: "/Images/Inge.jpg",
+        },
+        rating: 5,
+        description:
+            "Sehr kompetente Mitarbeiter. Die Farbe die mir emfohlen wurde, passt auch perfekt! Habe viele Komlimete bekommen)) Beim nächsten mal gehe ich sicher wieder hin.Kann ich nur weiter empfehlen!",
     },
 ];
 
@@ -136,7 +133,7 @@ const Review = () => {
                                             {author.fullName}
                                         </h4>
                                         <Rating rating={rating} showLabel={false} />
-                                        <p className="opacity-70">{description}</p>
+                                        <p className="opacity-90 mt-4">{description}</p>
                                     </div>
                                     <div className="px-6 lg:px-12 text-end">
                                         <button

@@ -48,7 +48,7 @@ const ServicePage = () => {
             <div className="relative h-96 w-full">
                 <Image
                     fill
-                    src="/Images/ff.jpg"
+                    src="/Images/titlepicture.jpg"
                     alt="Contact Banner"
                     className="object-cover w-full h-full"
                 />

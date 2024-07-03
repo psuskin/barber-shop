@@ -8,9 +8,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const teamMembers = [
   {
     picture: "/Images/haircut1.jpg",
-    fullName: "Karim Ahmed",
-    designation: "Master Friseur / Gründer",
-    bio: "Mit einer Leidenschaft für das Friseurhandwerk und einem scharfen Auge für Details ist Karim die treibende Kraft hinter unserem Salon. Als Master Friseur spezialisiert er sich auf klassische Schnitte und moderne Styles, sodass jeder Kunde den Salon selbstbewusst und erfrischt verlässt. Vertrauen Sie Karim für einen Haarschnitt, der Ihre Erwartungen übertrifft.",
+    fullName: "Mr. Darcan",
+    designation: "Spezialist für Männerhaarschnitte",
+    bio: "Mr. Darcan ist der Spezialist für Männerhaarschnitte bei Hannis Beautysalon. Mit präziser Hand und einem Gespür für klassische sowie moderne Styles sorgt er dafür, dass jeder Kunde den Salon mit einem perfekten Haarschnitt verlässt. Sein freundliches und professionelles Auftreten macht jeden Besuch zu einem angenehmen Erlebnis.",
   },
   // {
   //   picture: "/Images/.jpg",
@@ -20,15 +20,15 @@ const teamMembers = [
   // },
   {
     picture: "/Images/works.jpg",
-    fullName: "Rahim Müller",
-    designation: "Friseur / Style Spezialist",
-    bio: "Rahim ist nicht nur ein Friseur; er ist ein Style Spezialist, der sich dafür einsetzt, dass die Kunden ihren gewünschten Look erreichen. Ob klassischer Herrenschnitt oder trendiger Fade, Rahims Liebe zum Detail und sein Streben nach Perfektion sorgen dafür, dass jeder Haarschnitt perfekt angepasst ist.",
+    fullName: "Junior Darcan",
+    designation: "Friseurmeister",
+    bio: "Junior Darcan ist der Stolz des Familienunternehmens und der einzige mit einem Meisterbrief im Friseurhandwerk. Seine umfassende Ausbildung und sein kreatives Talent machen ihn zu einem herausragenden Friseur, der sowohl Damen als auch Herren mit innovativen und hochwertigen Haarschnitten begeistert. Mit seinem Wissen und seiner Leidenschaft setzt er neue Maßstäbe in der Friseurbranche.",
   },
   {
-    picture: "/Images/haarwelt2.jpg",
-    fullName: "Klaus Meyer",
-    designation: "Friseur / Marketing Direktor",
-    bio: "Klaus Meyer ist mehr als nur ein Friseur; er ist der kreative Kopf hinter den Marketingaktivitäten unseres Salons. Mit seinem innovativen Ansatz und seiner Leidenschaft fürs Friseurhandwerk stellt er sicher, dass unser Salon die erste Anlaufstelle für qualitativ hochwertige Schnitte und außergewöhnlichen Service ist. Erleben Sie heute den Unterschied von Klaus Meyer.",
+    picture: "/Images/mrs.jpg",
+    fullName: "Mrs. Darcan",
+    designation: "Expertin für Frauenhaarschnitte",
+    bio: "Mrs. Darcan ist Ihre Expertin für alles rund um Frauenhaarschnitte. Mit jahrelanger Erfahrung und einem ausgeprägten Sinn für Stil und Ästhetik, bietet sie erstklassige Dienstleistungen im Bereich Färben, Föhnen und Stylen. Ihre Leidenschaft für Haare und ihr geschultes Auge für Trends garantieren Ihnen stets einen frischen und modischen Look.",
   },
 ];
 
@@ -62,7 +62,7 @@ const Team = () => {
     <section className="light bg-white text-zinc-900 overflow-hidden mt-10 mb-10">
       <div className="mb-8 lg:mb-14 container mx-auto px-2">
         <h3 className='text-[#D4A745] text-xl lg:text-[2rem] font-Dancing pb-2'>Unser Team</h3>
-        <h1 className='text-2xl lg:text-[2rem] font-semibold'>Lernen Sie unsere erfahrenen Styler kennen</h1>
+        <h1 className='text-2xl lg:text-[2rem] font-semibold'>Lernen Sie unsere Familie kennen</h1>
       </div>
       <div className='bg-orange-100'>
         <div className="container mx-auto">
@@ -84,7 +84,7 @@ const Team = () => {
               <div className="pt-12 pb-28 md:py-24 lg:py-48 lg:pr-24">
                 <h4 className="font-medium text-2xl mb-1">{fullName}</h4>
                 <p className="mb-6">{designation}</p>
-                <p className="opacity-50 mb-0 leading-7">{bio}</p>
+                <p className="opacity-85 mb-0 leading-7">{bio}</p>
               </div>
               <div className="absolute w-24 text-right right-[13%] -bottom-6 lg:bottom-0 text-[150px] text-[#dbac47] font-Dancing">
                 {index + 1}

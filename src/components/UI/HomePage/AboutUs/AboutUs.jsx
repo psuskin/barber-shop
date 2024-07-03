@@ -34,25 +34,28 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className="col-span-2 md:col-span-1 flex flex-col justify-center py-12">
-                        <h2 className={`${styles.title} text-[42px] font-normal leading-[52px] z-[1] md:text-6xl md:leading-10 relative after:bottom-2.5 after:-translate-x-1/2 mb-12`}>
+                        <h2 className={`${styles.title} text-[42px] font-normal leading-[40px] z-[1] md:text-6xl md:leading-10 relative after:bottom-2.5 after:-translate-x-1/2 mb-12`}>
                             Unsere <span className="text-[#D4A745]">Geschichte</span>
                         </h2>
 
                         <div>
-                            <p className="text-2xl leading-7 font-normal opacity-70 mb-4 mb-md-2">
-                                AIn unserem Schönheitssalon,
+                            <p className="text-xl leading-7 font-normal opacity-70 mb-4 mb-md-2">
+                                Willkommen bei Hannis Beautysalon,
                             </p>
 
-                            <p className="text-2xl leading-7 font-normal opacity-70 md:pr-2 text-justify">
-                                geht es nicht nur um Dienstleistungen; wir gestalten Erlebnisse. Betreten Sie unser Refugium aus Stil und Eleganz, wo jeder Termin eine Einladung ist, sich zu verwöhnen und Transformation zu umarmen. Unsere erfahrenen Stylisten sind mehr als nur Fachleute; sie sind Künstler, die sich der Meisterung ihres Handwerks widmen und individuelle Looks kreieren, die Ihre Persönlichkeit feiern. Von zeitlosen Stilen bis hin zu modernen Trends legen wir Wert auf außergewöhnlichen Service und akribische Liebe zum Detail. Doch wir sind mehr als nur ein Salon; wir sind ein Treffpunkt der Gemeinschaft, wo Freunde zusammenkommen, Geschichten ausgetauscht werden und Erinnerungen entstehen. Begleiten Sie uns und heben Sie Ihre Schönheitserfahrung auf ein neues Niveau.
+                            <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify">
+                                Einem familiengeführten Unternehmen, das sich der Schönheit und dem Wohlbefinden seiner Kunden verschrieben hat. Seit Generationen teilen wir unsere Leidenschaft und unser Können in der Friseur- und Schönheitsbranche. Der Familienvater, ein erfahrener Friseurmeister, ist spezialisiert auf moderne und klassische Männerhaarschnitte, während seine Frau und unsere Söhne sich liebevoll um die Haarpflege und Schönheit der Damen kümmern.
                             </p>
+                            <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify mt-4">Unser Wissen und unsere Talente haben wir erfolgreich an die nächste Generation weitergegeben, die mit ebenso viel Engagement und Professionalität arbeitet. Uns liegt es am Herzen, Ihnen nicht nur einen erstklassigen Service zu bieten, sondern auch eine persönliche und familiäre Atmosphäre zu schaffen, in der Sie sich wohl und geschätzt fühlen.</p>
+
+                            <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify mt-4">Neben perfekten Haarschnitten und Stylings bieten wir eine Vielzahl weiterer Dienstleistungen an. Unser Angebot umfasst unter anderem medizinische Fußpflege, professionelle Haarentfernung und beeindruckende Wimpernverlängerungen. Jede Behandlung wird mit größter Sorgfalt und Liebe zum Detail durchgeführt, um Ihre natürlichen Vorzüge zu betonen und Ihr Selbstbewusstsein zu stärken.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <Link href="/about"
-                className="overflow-hidden bg-gradient-to-r bg-[#D4A745] text-white font-semibold py-2 px-6 transform transition-transform duration-300 absolute bottom-20 right-4 lg:bottom-60 lg:right-48 mr-4 mt-4"
+                className="overflow-hidden bg-gradient-to-r bg-[#D4A745] text-white font-semibold py-2 px-6 transform transition-transform duration-300 absolute bottom-16 right-4 md:bottom-28 md:right-24 mr-4 mt-4"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >

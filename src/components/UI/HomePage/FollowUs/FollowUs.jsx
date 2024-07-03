@@ -5,17 +5,17 @@ import { FaInstagram } from 'react-icons/fa';
 
 
 const images = [
-    { src: '/Images/service1.jpg', alt: 'Image 1', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
-    { src: '/Images/fusspflege1.jpg', alt: 'Image 2', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
-    { src: '/Images/haircut1.jpg', alt: 'Image 3', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
-    { src: '/Images/asthetische.jpg', alt: 'Image 4', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
-    { src: '/Images/room1.jpg', alt: 'Image 5', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
-    { src: '/Images/room3.jpg', alt: 'Image 6', link: 'https://www.tiktok.com/@hannishamburg?_t=8m7cTJlc6ML&_r=1' },
+    { src: '/Images/service1.jpg', alt: 'Image 1', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
+    { src: '/Images/fusspflege1.jpg', alt: 'Image 2', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
+    { src: '/Images/haircut1.jpg', alt: 'Image 3', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
+    { src: '/Images/asthetische.jpg', alt: 'Image 4', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
+    { src: '/Images/room1.jpg', alt: 'Image 5', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
+    { src: '/Images/room3.jpg', alt: 'Image 6', link: 'https://www.instagram.com/hannis_beautysalon?igsh=NnE0c3dsY3hydmZy' },
 ];
 
 const FollowUsSection = () => {
 
-   
+
     return (
         <section className="py-16 bg-gray-100 h-[70vh]">
             <div className="text-center mb-8">
