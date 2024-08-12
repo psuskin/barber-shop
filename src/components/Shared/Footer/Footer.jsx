@@ -32,7 +32,7 @@ function Footer() {
 
                         <ul className="mt-8 space-y-1 text-base text-gray-700">
                             <li className="flex items-center text-gray-700">
-                                Mo-Fr: 09:00 - 19:00
+                                Di-Fr: 09:00 - 19:00
                                 <br />
                                 Samstag: 09:00 - 18:00
                                 <br />

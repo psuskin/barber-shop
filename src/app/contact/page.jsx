@@ -50,7 +50,7 @@ const ContactPage = () => {
                                 <svg className="w-6 h-6 text-[#D4A745] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12v2a2 2 0 002 2h4a2 2 0 002-2v-2M8 12V8a4 4 0 018 0v4m-8 0H7m1 0H5m1 0h8"></path>
                                 </svg>
-                                Mo-Fr: 09:00 - 19:00
+                                Di-Fr: 09:00 - 19:00
                                 <br />
                                 Samstag: 09:00 - 18:00
                                 <br />
@@ -119,7 +119,7 @@ const ContactPage = () => {
                     <h3 className="text-2xl font-semibold text-[#D4A745]">Impressum</h3>
                     <div className="mt-4 text-gray-700 space-y-2">
                         <p><strong>Hannis Beautysalon</strong></p>
-                        <p>Inhaberin: Hanife Darcan</p>
+                        <p>Inhaberin: Cetincan Darcan</p>
                         <p>Friedensallee 102b</p>
                         <p>22763 Hamburg</p>
                         <p>Deutschland</p>

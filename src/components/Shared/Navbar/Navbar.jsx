@@ -93,7 +93,7 @@ const Navbar = () => {
                 {hoverService && (
                   <motion.div variants={menuVars} initial="initial" animate="animate" exit="exit" className="absolute left-0 top-full text-nowrap rounded-md shadow-lg p-2 backdrop-blur-md" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                     {serviceOptions.map((option, index) => (
-                      <Link key={index} href="/services">
+                      <Link key={index} href={`/services#service${index}`}>
                         <p className={`${styles.linkMneme} ${styles.link} cursor-pointer p-1`}>
                           {option}
                         </p>
@@ -140,7 +140,7 @@ const Navbar = () => {
                   <div className="flex flex-col items-center mt-4">
                     {serviceOptions.map((option, index) => (
                       <motion.div key={index} variants={mobileLinkVars} className="text-2xl text-black">
-                        <Link href="/services" onClick={toggleMenus}>
+                        <Link href={`/services#service${index}`} onClick={toggleMenus}>
                           {option}
                         </Link>
                       </motion.div>

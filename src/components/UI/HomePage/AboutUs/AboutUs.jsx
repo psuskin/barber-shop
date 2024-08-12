@@ -44,11 +44,11 @@ const AboutUs = () => {
                             </p>
 
                             <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify">
-                                Einem familiengeführten Unternehmen, das sich der Schönheit und dem Wohlbefinden seiner Kunden verschrieben hat. Seit Generationen teilen wir unsere Leidenschaft und unser Können in der Friseur- und Schönheitsbranche. Der Familienvater, ein erfahrener Friseurmeister, ist spezialisiert auf moderne und klassische Männerhaarschnitte, während seine Frau und unsere Söhne sich liebevoll um die Haarpflege und Schönheit der Damen kümmern.
+                                Einem familiengeführten Unternehmen, das sich der Schönheit und dem Wohlbefinden seiner Kunden verschrieben hat. Seit Generationen teilen wir unsere Leidenschaft und unser Können in der Friseur- und Schönheitsbranche. Unser Familienvater, ein erfahrener Friseurmeister, ist spezialisiert auf moderne und klassische Männerhaarschnitte, während Frau und Sohn sich liebevoll um die Haarpflege und Schönheit der Damen kümmern.
                             </p>
                             <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify mt-4">Unser Wissen und unsere Talente haben wir erfolgreich an die nächste Generation weitergegeben, die mit ebenso viel Engagement und Professionalität arbeitet. Uns liegt es am Herzen, Ihnen nicht nur einen erstklassigen Service zu bieten, sondern auch eine persönliche und familiäre Atmosphäre zu schaffen, in der Sie sich wohl und geschätzt fühlen.</p>
 
-                            <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify mt-4">Neben perfekten Haarschnitten und Stylings bieten wir eine Vielzahl weiterer Dienstleistungen an. Unser Angebot umfasst unter anderem medizinische Fußpflege, professionelle Haarentfernung und beeindruckende Wimpernverlängerungen. Jede Behandlung wird mit größter Sorgfalt und Liebe zum Detail durchgeführt, um Ihre natürlichen Vorzüge zu betonen und Ihr Selbstbewusstsein zu stärken.</p>
+                            <p className="text-xl leading-7 font-normal opacity-70 md:pr-2 text-justify mt-4">Neben perfekten Haarschnitten und Stylings bieten wir eine Vielzahl weiterer Dienstleistungen an. Unser Angebot umfasst unter anderem medizinische Fußpflege, dauerhafte Haarentfernung und beeindruckende Wimpernverlängerungen. Jede Behandlung wird mit größter Sorgfalt und Liebe zum Detail durchgeführt, um Ihre natürlichen Vorzüge zu betonen und Ihr Selbstbewusstsein zu stärken.</p>
                         </div>
                     </div>
                 </div>
