@@ -15,7 +15,7 @@ export const metadata = generatePageMetadata({
 
 const services = [
     {
-        image: "/Images/haarwelt2.jpg",
+        image: "/Images/haircut3.jpg",
         title: "Haarwelt",
         description: "Professionelle Haarschnitte für Männer, Frauen und Kinder. Unsere erfahrenen Friseure bieten eine Vielzahl von Schnitttechniken und Stilen an, um sicherzustellen, dass Sie genau den Look erhalten, den Sie sich wünschen. Egal, ob Sie eine klassische Frisur, einen trendigen Haarschnitt oder eine individuelle Haarfarbe wünschen, wir sind hier, um Ihre Haarträume wahr werden zu lassen."
     },
