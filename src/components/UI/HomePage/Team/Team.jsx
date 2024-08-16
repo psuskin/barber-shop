@@ -8,9 +8,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const teamMembers = [
   {
     picture: "/Images/haircut1.jpg",
-    fullName: "Mr. Darcan",
+    fullName: "Gökhan Darcan",
     designation: "Spezialist für Männerhaarschnitte",
-    bio: "Mr. Darcan ist der Spezialist für Männerhaarschnitte bei Hannis Beautysalon. Mit präziser Hand und einem Gespür für klassische sowie moderne Styles sorgt er dafür, dass jeder Kunde den Salon mit einem perfekten Haarschnitt verlässt. Sein freundliches und professionelles Auftreten macht jeden Besuch zu einem angenehmen Erlebnis.",
+    bio: "Gökhan Darcan ist der Spezialist für Männerhaarschnitte bei Hannis Beautysalon. Mit präziser Hand und einem Gespür für klassische sowie moderne Styles sorgt er dafür, dass jeder Kunde den Salon mit einem perfekten Haarschnitt verlässt. Sein freundliches und professionelles Auftreten macht jeden Besuch zu einem angenehmen Erlebnis.",
   },
   // {
   //   picture: "/Images/.jpg",
@@ -20,15 +20,15 @@ const teamMembers = [
   // },
   {
     picture: "/Images/works.jpg",
-    fullName: "Junior Darcan",
+    fullName: "Cetincan Darcan",
     designation: "Friseurmeister",
-    bio: "Junior Darcan ist der Stolz des Familienunternehmens und der einzige mit einem Meisterbrief im Friseurhandwerk. Seine umfassende Ausbildung und sein kreatives Talent machen ihn zu einem herausragenden Friseur, der sowohl Damen als auch Herren mit innovativen und hochwertigen Haarschnitten begeistert. Mit seinem Wissen und seiner Leidenschaft setzt er neue Maßstäbe in der Friseurbranche.",
+    bio: "Cetincan Darcan ist der Stolz des Familienunternehmens und der einzige mit einem Meisterbrief im Friseurhandwerk. Seine umfassende Ausbildung und sein kreatives Talent machen ihn zu einem herausragenden Friseur, der sowohl Damen als auch Herren mit innovativen und hochwertigen Haarschnitten begeistert. Mit seinem Wissen und seiner Leidenschaft setzt er neue Maßstäbe in der Friseurbranche.",
   },
   {
     picture: "/Images/mrs.jpg",
-    fullName: "Mrs. Darcan",
+    fullName: "Hanife Darcan",
     designation: "Expertin für Frauenhaarschnitte",
-    bio: "Mrs. Darcan ist Ihre Expertin für alles rund um Frauenhaarschnitte. Mit jahrelanger Erfahrung und einem ausgeprägten Sinn für Stil und Ästhetik, bietet sie erstklassige Dienstleistungen im Bereich Färben, Föhnen und Stylen. Ihre Leidenschaft für Haare und ihr geschultes Auge für Trends garantieren Ihnen stets einen frischen und modischen Look.",
+    bio: "Hanife Darcan ist Ihre Expertin für alles rund um Frauenhaarschnitte. Mit jahrelanger Erfahrung und einem ausgeprägten Sinn für Stil und Ästhetik, bietet sie erstklassige Dienstleistungen im Bereich Färben, Föhnen und Stylen. Ihre Leidenschaft für Haare und ihr geschultes Auge für Trends garantieren Ihnen stets einen frischen und modischen Look.",
   },
 ];
 

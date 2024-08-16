@@ -119,7 +119,7 @@ const ContactPage = () => {
                     <h3 className="text-2xl font-semibold text-[#D4A745]">Impressum</h3>
                     <div className="mt-4 text-gray-700 space-y-2">
                         <p><strong>Hannis Beautysalon</strong></p>
-                        <p>Inhaberin: Cetincan Darcan</p>
+                        <p>Inhaber: Cetincan Darcan</p>
                         <p>Friedensallee 102b</p>
                         <p>22763 Hamburg</p>
                         <p>Deutschland</p>
