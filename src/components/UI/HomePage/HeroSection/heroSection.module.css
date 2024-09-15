@@ -1,5 +1,3 @@
-/* heroSection.module.css */
-
 .videoContainer {
     position: relative;
     width: 100%;
@@ -95,14 +93,12 @@
     .muteBtn,
     .playPauseBtn {
         bottom: 1rem;
-        /* Adjusted button position for smaller screens */
         padding: 0.4rem;
-        /* Adjusted button padding for smaller screens */
+
     }
 
     .blur {
         display: none;
-        /* Hide the blur element on smaller screens */
     }
 }
 

@@ -66,7 +66,6 @@ const HeroSection = () => {
                 )}
             </button>
 
-
             <button onClick={togglePlayPause} className={styles.playPauseBtn}>
                 {isPlaying ? (
                     <Image src="/pause.svg" alt="Mute" width="20" height="20" />
