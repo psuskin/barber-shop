@@ -47,6 +47,9 @@ const HeroSection = () => {
                     muted
                     preload="metadata"
                     poster="/Images/poster.jpg"
+                    controls={false}
+                    playsInline
+                    webkit-playsinline="true"
                 >
                     <source src="/Video/video-header.webm" type="video/webm" />
                     <source src="/Video/video-header.mp4" type="video/mp4" />
@@ -62,7 +65,6 @@ const HeroSection = () => {
                     <Image src="/unmute.svg" alt="Unmute" width="20" height="20" />
                 )}
             </button>
-
 
             <button onClick={togglePlayPause} className={styles.playPauseBtn}>
                 {isPlaying ? (
